@@ -1,0 +1,14 @@
+tr, td, table {
+	border: 1px solid #b9b5b5;
+	color: #b9b5b5;
+}
+table {
+    width: 100%; /* Ширина таблицы */
+   
+   }
+
+thead{
+	border: 1px solid #b9b5b5;
+	text-transform: uppercase;
+	color: #b9b5b5;
+}

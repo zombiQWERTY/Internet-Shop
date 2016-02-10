@@ -1,0 +1,47 @@
+@media screen and (max-width: 1025px){
+	.header__menu li {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 640px){
+.register-block__form, .register-block__form__field {
+  width: 100%;
+}
+
+	.register-block__form__submit{
+		/*width: 20%;*/
+	}
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px), screen and (max-width: 560px) and (min-width: 0) {
+
+	.search_desktop .search__form {
+		display: none;
+	}
+
+	.search_mobile {
+		display: block;
+		width: auto;
+		margin: 0 auto;
+		display: none;
+		height: 60px;
+		border-bottom: 1px solid #a3a3a3;
+		margin-top: -1px;
+	}
+
+	.search_mobile .search__form {
+		position: static;
+		width: 100%;
+	}
+
+	.search_mobile .search__form__field {
+		width: 100%;
+	}
+	.register-block__form-wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,102 @@
+@media screen and (max-width: 768px){
+
+	.header__menu{
+		display: none;
+	}
+	.menu-tablet{
+		display: block;
+	  text-align: center;
+	  border-bottom: 1px solid #e5e5e5;
+	}
+	.menu-tablet__items{
+	  list-style-type: none;
+	}
+	.menu-tablet__items li{
+	  padding: 15px 0;
+	  text-align: center;
+	}
+	.menu-tablet__items li a {
+	  color: #303030;
+
+	}
+
+	.button{
+		display: none;
+	}
+
+	.items-grid__item{
+		margin: 0 auto;
+		width: 70%;
+		height: 250px;
+		overflow: hidden;
+	}
+	.items-grid__item img{
+		width: 100%;
+	}
+	.footer__section:not(:last-child){
+		display: none;
+	}
+	.footer__section:last-child{
+		border: none;
+	}
+	.footer__section{
+		text-align: center;
+		font-family: "Myriad Pro";
+		font-size: 18px;
+	}
+	.subheader {
+	  font: italic 18px/1.45 "Georgia";
+	}
+	h3{
+		font-size: 30px;
+	}
+	.large_letter{
+		font-size: 24px;
+	}
+	
+	.header{
+		  padding: 15px 0;
+	}
+
+	.promo_large, .promo{
+		margin: 0;
+		padding: 30px 0;
+	}
+
+	/*men-clother*/
+	.men-clother-description h3{
+		font: bold 14px/1 "Lato";
+	}
+
+	.breadcrumb{
+    justify-content: center;
+	}
+
+.breadcrumb li{
+	text-align: center;
+}
+
+	/*thank you*/
+	.sent_wrapper{
+	margin: 50px 0;
+
+	}
+	.footer__section:last-child{
+		border-top: 1px solid rgba(0, 0, 0, .1);
+	}
+	.footer__section__title{
+		margin-top: 30px;
+	}
+
+	.nothing{
+		display: none;
+	}
+	
+	.goods__gallery-main{
+		width: 65%;
+	}
+	
+	.goods__gallery-wrapper{
+		width: 25%;
+	}
+}

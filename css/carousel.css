@@ -1,0 +1,26 @@
+.slick-prev.slick-arrow {
+	display: block;
+	background: #e6e6e6;
+	height: 100%;
+	z-index: 1;
+	opacity: .94;
+	left: 0 !important;
+}
+
+.slick-next.slick-arrow {
+	display: block;
+	background: #e6e6e6;
+	height: 100%;
+	z-index: 1;
+	opacity: .94;
+	right: 0 !important;
+}
+
+.slick-prev:hover {
+	opacity: .8;
+	background: #e6e6e6 !important;
+}
+
+.carousel{
+	padding: 0 20px !important;
+}
