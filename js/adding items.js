@@ -53,8 +53,9 @@ $.ajax({
 
         	};
         $(divWrapper).on('click', function() {
-            	window.open('../pdp.html');
-              console.log(this.id);
+            	// window.open('../pdp.html',"_self");
+              window.location.replace("../pdp.html");
+              console.log('ojiijij');
           	});
 
 }
