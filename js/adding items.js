@@ -3,34 +3,15 @@ $.ajax({
   url: '../json/clothes.json',
   success: function(data) {
     console.log('Connect');
-
-var goods_key = Object.keys(data);
-console.log(data);
-console.log(goods_key);
-console.info("for start");
-for (var i = goods_key.length-1; i >= 0; i--) {
-   console.log("key:", goods_key[i]);
-   console.log("id:", goods_key[i][0]);
-   console.log("value:", data[ goods_key[i] ]); //array of objects
-    console.info("forEach start");   
-   data[ goods_key[i] ].forEach(function(item, index) {
-    console.warn('your object', item);
-    console.warn(item.name);
-   });
-   console.info("forEach end");   
-};
-console.info("for end");
-
-
+	
+	function getting_items(arrayOfItems) {
+    	var goods_key = Object.keys(data);
+      for (var category_length = 0; category_length <= goods_key.length - 1; category_length++) { 
     
-    function getting_items(arrayOfItems) {
-      for (var category_length = 0; category_length <= goods_key.length - 1; category_length++) {
-     
       var h2Obj = document.createElement('h2');
         h2Obj.className = 'men-clother__header';
-        h2Obj.innerHTML = goods_key[category_length]; //take variable from json
+        h2Obj.innerHTML = goods_key[category_length];
       var divWrapper = document.getElementsByClassName('men-clother__wrapper')[0];
-      console.log(divWrapper);
         divWrapper.appendChild(h2Obj);
 
       var headerLink = document.createElement('a');
@@ -46,7 +27,7 @@ console.info("for end");
         for (var i = 0; i <= 3; i++) {
           var divDescr = document.createElement('div');
             divDescr.className = 'men-clother-description';
-            divDescr.id = 'oo'; //take from ajax
+            divDescr.id = data[goods_key[category_length]][i].id;
             flexItemRow.appendChild(divDescr);
 
           var divDescr_item = document.createElement('div');
@@ -55,21 +36,27 @@ console.info("for end");
 
           var imgClother_item = document.createElement('img');
             imgClother_item.className = 'men-clother-item-img';
-            imgClother_item.src = '#' //take from ajax
-            imgClother_item.alt = 'pic' //take from ajax
+            imgClother_item.src = data[goods_key[category_length]][i].img[0];
+            imgClother_item.alt = 'pic';
             divDescr_item.appendChild(imgClother_item);
 
           var h3_header = document.createElement('h3');
-            h3_header.innerHTML = "take from ajax";
+            h3_header.innerHTML = data[goods_key[category_length]][i].name;
             divDescr.appendChild(h3_header);
 
           var p_price = document.createElement('p');
             p_price.className = 'men-clother-item-price';
-            p_price.innerHTML = 'take from ajax' + ' $';
+            p_price.innerHTML = data[goods_key[category_length]][i].price + ' $';
             divDescr.appendChild(p_price);
         };
         //end filling row collection by categories
-       };
+
+        	};
+        $(divWrapper).on('click', function() {
+            	window.open('../pdp.html');
+              console.log(this.id);
+          	});
+
 }
 getting_items();
 
