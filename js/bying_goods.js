@@ -33,12 +33,11 @@ $(function () {
   var $galleryItem = $(".goods__gallery_wrapper-item");
   var img;
   $galleryItem.on('click', function(){
-    $galleryItem.removeClass("active");
-    
     img = $(this)
       .addClass("active")
       .html();
 
+    $galleryItem.removeClass("active");
     $gallery.html(img);
   });
 
