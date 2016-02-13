@@ -7,29 +7,46 @@ $(function() {
 						var goods_key = Object.keys(data);
 						console.log('Connect');
 						var my_hash = location.hash; 
-						var myId    = my_hash.substr(my_hash.indexOf("#") + 1); 
+						var myId = my_hash.substr(my_hash.indexOf("#") + 1); 
 						console.log(myId);
-						
-						function getById(myId) {
-							console.log(myId);
-							//console.log(data[goods_key[2]][3].id)
-							for (var i = 0; i <= 2; i++) {
-								for (var j = 0; j <= 3; j++) {
-									if (myId = data[goods_key[i]][j].id) {
-										// console.log(data[goods_key[i]][j].id)
-										return data[goods_key[i]][j].id;
-									} else {
-										console.log('jjjjjjjj');
-									}
-								};
-								console.log(data[goods_key[i]][j].id)
-							};
-							
-						}
-						getById(myId)
-					//	console.log(data[goods_key[2]][3].id);
+						console.log(data[goods_key]);
+
+						// console.log(typeof goods_key);
+						// var toObj=[].slice.call(goods_key);
+						// function getById(myId) {
+						// 	for (var i = 0; i <= 2; i++) {
+						// 		for (var j = 0; j <= goods_key.length; j++) {
+						// 			if (data[goods_key[i]][j].id == myId) {
+						// 				return data[goods_key[i]][j];
+						// 			} else {
+						// 				//console.log('Заданного id нет');
+						// 				return false;
+						// 			}
+						// 		};
+						// 	};
+						// }
+						// var id = 1; // твой id
+						 //filter возвращает массив. allItems - это массив товаров,
 
 
+
+						 //	_____________________________
+						//  function getById(myId){
+						//  	for (var i = 0; i <= goods_key.length - 1; i++) {
+						//  		var findObj = data[goods_key[i]].filter(function(item) {
+						// 			console.log(item);
+						// 			var myObj = item.id;
+						// 			if (item.id == myId) {
+						// 				return myObj;
+						// 			};
+				      
+				  //       });
+						// 		console.log(findObj);
+						//  	};
+						//  }
+						// var myObj = getById(myId);
+						// console.log(myObj);
+            //	_____________________________
 						function building_gallery () {
 							var divGoodsGallery = document.getElementsByClassName('goods__gallery')[0];
 							var divGoodsGalleryMain = document.createElement('div');
