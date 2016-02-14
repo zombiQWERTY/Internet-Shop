@@ -9,44 +9,29 @@ $(function() {
 						var my_hash = location.hash; 
 						var myId = my_hash.substr(my_hash.indexOf("#") + 1); 
 						console.log(myId);
-						console.log(data[goods_key]);
+						console.log(goods_key);
 
-						// console.log(typeof goods_key);
-						// var toObj=[].slice.call(goods_key);
-						// function getById(myId) {
-						// 	for (var i = 0; i <= 2; i++) {
-						// 		for (var j = 0; j <= goods_key.length; j++) {
-						// 			if (data[goods_key[i]][j].id == myId) {
-						// 				return data[goods_key[i]][j];
-						// 			} else {
-						// 				//console.log('Заданного id нет');
-						// 				return false;
-						// 			}
-						// 		};
-						// 	};
-						// }
-						// var id = 1; // твой id
-						 //filter возвращает массив. allItems - это массив товаров,
+						$.each(data, function(key, myArray) {
+							myArray.filter(function(myObj) {
+								if (myObj.id == myId) {
+									console.log(myObj);   
+									//return item;   
+				    		}
+							})
 
+						})
+ 
 
+				// var findId = goods_key.forEach(function (elem, item) {
+				// 	console.log(elem)
+				// 	console.log(item)
+				// 	data[goods_key[item]].filter(function(elem){
+				// 		var findId = elem.id === myId;
+				// 		return findId;
+				// 	});
+				// });
+				//  findId(myId);
 
-						 //	_____________________________
-						//  function getById(myId){
-						//  	for (var i = 0; i <= goods_key.length - 1; i++) {
-						//  		var findObj = data[goods_key[i]].filter(function(item) {
-						// 			console.log(item);
-						// 			var myObj = item.id;
-						// 			if (item.id == myId) {
-						// 				return myObj;
-						// 			};
-				      
-				  //       });
-						// 		console.log(findObj);
-						//  	};
-						//  }
-						// var myObj = getById(myId);
-						// console.log(myObj);
-            //	_____________________________
 						function building_gallery () {
 							var divGoodsGallery = document.getElementsByClassName('goods__gallery')[0];
 							var divGoodsGalleryMain = document.createElement('div');
