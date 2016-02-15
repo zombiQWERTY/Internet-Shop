@@ -51,7 +51,7 @@ $(function() {
 
 
                         divDescr.addEventListener('click', function() {
-                          window.location = '/pdp.html#' + this.id;
+                          window.location = './pdp.html#' + this.id;
                         });
 
                     };
