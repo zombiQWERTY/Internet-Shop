@@ -11,7 +11,7 @@
       "color": "One Color",
       "src": "../../img/men-clother/men-coats/1/1.jpg",
       "price": "99",
-      "Article number": 15268390498,
+      "Article_number": "15268390498",
       "id": "coat1",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil atque ducimus debitis nulla expedita pariatur. Dolorem vero repudiandae, delectus incidunt tenetur dolores fuga, reiciendis, magnam iusto voluptatum assumenda natus."
@@ -26,7 +26,7 @@
       ],
       "color": "One Color",
       "price": "69",
-      "Article number": 57920474958,
+      "Article_number": "57920474958",
       "id": "coat2",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, fuga, asperiores. Placeat pariatur, aspernatur ullam tempore repellendus tempora assumenda recusandae tenetur sunt quos a doloribus explicabo inventore, voluptatem accusamus aperiam."
@@ -41,7 +41,7 @@
       ],
       "color": "One Color",
       "price": "50",
-      "Article number": 28403847,
+      "Article_number": "28403847",
       "id": "coat3",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illo illum laborum molestiae minus voluptate nobis nihil fugiat, sit aut hic eaque quisquam obcaecati sapien te est, saepe aperiam dolores explicabo!"
@@ -56,7 +56,7 @@
       ],
       "color": "One Color",
       "price": "78",
-      "Article number": 2748003755,
+      "Article_number": "2748003755",
       "id": "coat4",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi quam dolorem perferendis adipisci officia ea voluptatibus ab eum inventore, sequi nam laborum, corporis nihil. Odit qui molestiae facere, ipsum."
@@ -73,7 +73,7 @@
       ],
       "color": "One Color",
       "price": "85",
-      "Article number": 394965938475,
+      "Article_number": "394965938475",
       "id": "outerwear1",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iusto dignissimos praesentium, possimus velit soluta, officiis laboriosam distinctio cupiditate. Sed eius aspernatur sit sequi culpa neque officia, eveniet nostrum itaque."
@@ -88,7 +88,7 @@
       ],
       "color": "One Color",
       "price": "59",
-      "Article number": 74757691628,
+      "Article_number": "74757691628",
       "id": "outerwear2",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magni enim quas necessitatibus iure facere, totam unde, possimus!"
@@ -103,7 +103,7 @@
       ],
       "color": "One Color",
       "price": "63",
-      "Article number": 33848504849,
+      "Article_number": "33848504849",
       "id": "outerwear3",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magnienim quas necessitatibus iure facere, totam unde, possimus!"
@@ -118,7 +118,7 @@
       ],
       "color": "One Color",
       "price": "82",
-      "Article number": 263748958732,
+      "Article_number": "263748958732",
       "id": "outerwear4",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magnienim quas necessitatibus iure facere, totam unde, possimus!"
@@ -135,7 +135,7 @@
       ],
       "color": "One Color",
       "price": "47",
-      "Article number": 284756928326,
+      "Article_number": "284756928326",
       "id": "t_shirts1",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam doloribus rem, eos, quo optio odit, voluptas quis possimus voluptates vero ea, esse nemo dolores ut. Consequatur, voluptatem minus doloribus reiciendis."
@@ -150,7 +150,7 @@
       ],
       "color": "One Color",
       "price": "39",
-      "Article number": 923894987543,
+      "Article_number": "923894987543",
       "id": "t_shirts2",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita suscipit, magni iusto, eius omnis consequatur quis quisquam repellendus error rem eum quidem, aut minus doloribus eligendi. Quos, veniam, commodi."
@@ -165,7 +165,7 @@
       ],
       "color": "One Color",
       "price": "49",
-      "Article number": 89758989698,
+      "Article_number": "89758989698",
       "id": "t_shirts3",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, doloribus! Quis optio dignissimos ipsum, aliquid ipsa corporis est vel nam nostrum odio dolorem amet assumenda pariatur non ut labore voluptatum."
@@ -180,7 +180,7 @@
       ],
       "color": "One Color",
       "price": "58",
-      "Article number": 2387894738593,
+      "Article_number": "2387894738593",
       "id": "t_shirts4",
       "size": "M,L",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, aperiam enim, sapiente amet necessitatibus, qui illum dignissimos alias est ab itaque similique? Ea deserunt omnis suscipit dolor dolorem minus nulla."

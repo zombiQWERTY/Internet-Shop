@@ -29,18 +29,21 @@ $(function () {
   });
 
   // pdp
-  var $gallery     = $(".goods__gallery-main");
-  var $galleryItem = $(".goods__gallery_wrapper-item");
-  var img;
-  $galleryItem.on('click', function(){
-    $galleryItem.removeClass("active");
-    
-    img = $(this)
-      .addClass("active")
-      .html();
+  setTimeout(function(){ // Асинхронность через нулевой таймаут
+    var $gallery     = $(".goods__gallery-main");
+    var $galleryItem = $(".goods__gallery_wrapper-item");
+    var img;
 
-    $gallery.html(img);
-  });
+    $galleryItem.on('click', function(){
+      $galleryItem.removeClass("active");
+      
+      img = $(this)
+        .addClass("active")
+        .html();
+
+      $gallery.html(img);
+    });
+  }, 0);
 
   var $cart     = $(".addToCart");
   $cart.on('click', function(){ 
