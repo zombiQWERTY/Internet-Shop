@@ -124,3 +124,12 @@
 .nothing{
   display: none;
 }
+.green{
+  background-color: green;
+}
+.disabled{
+  background-color: #959595;
+}
+.disabled:hover{
+  background-color: #959595;
+}

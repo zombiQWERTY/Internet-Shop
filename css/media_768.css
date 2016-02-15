@@ -92,19 +92,17 @@
 		display: none;
 	}
 	
-	
+	.big_button{
+		margin: 0 auto;
+	}
 	.order{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
 		flex-direction: column-reverse;
 		justify-content: center;
 		margin-top: 50px;
 		padding-bottom: 50px;
 		margin-bottom: 30px;
 		border-bottom: 1px solid #e5e5e5;
+		text-align: center;
 	}
 
 }

@@ -76,7 +76,7 @@ $(function() {
 												divGoodsSizeChoose.appendChild(divSize);
 										};
 								var aAddToCart = document.createElement('a');
-										aAddToCart.className = 'addToCart';
+										aAddToCart.className = 'addToCart disabled';
 										//aAddToCart.id = 'addToCart';
 										aAddToCart.innerHTML = 'Add to Cart';
 										divGoodsWrapperContent.appendChild(aAddToCart)
@@ -84,18 +84,31 @@ $(function() {
 								}
 								building_gallery();
 		    		}
-					})
-				})
+					});
+				});
 					
-					var sizeClass = document.getElementsByClassName('size');
-					console.log(sizeClass[0].innerHTML);
-					console.log(sizeClass.length);
-					for (var i = 0; i <= sizeClass.length - 1; i++) {
-						sizeClass[i].addEventListener('click', function () {
-							document.sizeClass[0].style.backgroundColor = "green";
-						});
+					var $addToCart = $('.addToCart');
+					var setAddCartActive = function(html) {
+						console.log(html);
+						if ($('.size').hasClass('green')) {
+							$addToCart.removeClass('disabled');
+							$addToCart.attr('href', './shop-cart.html');
+						} else {
+							$addToCart.addClass('disabled');
+							$addToCart.removeAttr('href');
+						}
 					};
-					
+
+
+					var sizeClass = document.getElementsByClassName('size');
+					var $this;
+					$(".goods__wrapper__size").on( "click", ".size", function() {
+						$this = $(this);
+						$this.toggleClass(function() {
+							return 'green';
+						});
+						setAddCartActive($this.html());
+					});
 
 	
 			},

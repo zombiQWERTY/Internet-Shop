@@ -80,7 +80,7 @@ tfoot{
 	padding: 15px 0;
 }
 .big_button{
-	margin: 0;
+	margin-left: 20px;
   display: inline-block;
   width: 190px;
   height: 50px;
@@ -88,6 +88,7 @@ tfoot{
   text-transform: uppercase;
   background-color: #f68236;
   padding: 10px 0;
+
 /*  margin-top: 50px;
   margin-bottom: 100px;*/
   text-align: center;
@@ -107,10 +108,11 @@ tfoot{
 	padding-bottom: 50px;
 	margin-bottom: 30px;
 	border-bottom: 1px solid #e5e5e5;
+	
 }
 .order a{
 	padding: 10px 0;
 }
 #order{
-	margin-left: 20px;
+/*	margin-left: 20px;*/
 }
