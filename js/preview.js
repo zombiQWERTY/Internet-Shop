@@ -2,7 +2,7 @@ $(function() {
 	if (window.location.pathname.indexOf('pdp') + 1) {
 		$.ajax({
 				dataType: 'json',
-				url: '../json/clothes.json',
+				url: './json/clothes.json',
 				success: function(data) {
 						var goods_key = Object.keys(data);
 						console.log('Connect');

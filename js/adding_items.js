@@ -2,9 +2,9 @@ $(function() {
   if (window.location.pathname.indexOf('category') + 1) {
     $.ajax({
         dataType: 'json',
-        url: '../json/clothes.json',
+        url: './json/clothes.json',
         success: function(data) {
-                      function getting_items() {
+              function getting_items() {
                 var goods_key = Object.keys(data);
                 for (var category_length = 0; category_length <= goods_key.length - 1; category_length++) {
 
