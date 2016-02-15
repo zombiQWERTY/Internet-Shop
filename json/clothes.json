@@ -13,7 +13,7 @@
       "price": "99",
       "Article_number": "15268390498",
       "id": "coat1",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi nihil atque ducimus debitis nulla expedita pariatur. Dolorem vero repudiandae, delectus incidunt tenetur dolores fuga, reiciendis, magnam iusto voluptatum assumenda natus."
     },
     {
@@ -28,7 +28,7 @@
       "price": "69",
       "Article_number": "57920474958",
       "id": "coat2",
-      "size": "M,L",
+      "size": ["XS","S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, fuga, asperiores. Placeat pariatur, aspernatur ullam tempore repellendus tempora assumenda recusandae tenetur sunt quos a doloribus explicabo inventore, voluptatem accusamus aperiam."
     },
     {
@@ -43,7 +43,7 @@
       "price": "50",
       "Article_number": "28403847",
       "id": "coat3",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur illo illum laborum molestiae minus voluptate nobis nihil fugiat, sit aut hic eaque quisquam obcaecati sapien te est, saepe aperiam dolores explicabo!"
     },
     {
@@ -58,7 +58,7 @@
       "price": "78",
       "Article_number": "2748003755",
       "id": "coat4",
-      "size": "M,L",
+      "size": ["XS","S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi quam dolorem perferendis adipisci officia ea voluptatibus ab eum inventore, sequi nam laborum, corporis nihil. Odit qui molestiae facere, ipsum."
     }
   ],
@@ -75,7 +75,7 @@
       "price": "85",
       "Article_number": "394965938475",
       "id": "outerwear1",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iusto dignissimos praesentium, possimus velit soluta, officiis laboriosam distinctio cupiditate. Sed eius aspernatur sit sequi culpa neque officia, eveniet nostrum itaque."
     },
     {
@@ -90,7 +90,7 @@
       "price": "59",
       "Article_number": "74757691628",
       "id": "outerwear2",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magni enim quas necessitatibus iure facere, totam unde, possimus!"
     },
     {
@@ -105,7 +105,7 @@
       "price": "63",
       "Article_number": "33848504849",
       "id": "outerwear3",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magnienim quas necessitatibus iure facere, totam unde, possimus!"
     },
     {
@@ -120,7 +120,7 @@
       "price": "82",
       "Article_number": "263748958732",
       "id": "outerwear4",
-      "size": "M,L",
+      "size": ["XS","S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint blanditiis explicabo temporibus eligendi vero eius sed quidem rem error sunt cupiditate magnienim quas necessitatibus iure facere, totam unde, possimus!"
     }
   ],
@@ -137,7 +137,7 @@
       "price": "47",
       "Article_number": "284756928326",
       "id": "t_shirts1",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam doloribus rem, eos, quo optio odit, voluptas quis possimus voluptates vero ea, esse nemo dolores ut. Consequatur, voluptatem minus doloribus reiciendis."
     },
     {
@@ -152,7 +152,7 @@
       "price": "39",
       "Article_number": "923894987543",
       "id": "t_shirts2",
-      "size": "M,L",
+      "size": ["XS","S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos expedita suscipit, magni iusto, eius omnis consequatur quis quisquam repellendus error rem eum quidem, aut minus doloribus eligendi. Quos, veniam, commodi."
     },
     {
@@ -167,7 +167,7 @@
       "price": "49",
       "Article_number": "89758989698",
       "id": "t_shirts3",
-      "size": "M,L",
+      "size": ["S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, doloribus! Quis optio dignissimos ipsum, aliquid ipsa corporis est vel nam nostrum odio dolorem amet assumenda pariatur non ut labore voluptatum."
     },
     {
@@ -182,7 +182,7 @@
       "price": "58",
       "Article_number": "2387894738593",
       "id": "t_shirts4",
-      "size": "M,L",
+      "size": ["XS","S","M","L"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, aperiam enim, sapiente amet necessitatibus, qui illum dignissimos alias est ab itaque similique? Ea deserunt omnis suscipit dolor dolorem minus nulla."
     }
   ]

@@ -68,10 +68,14 @@ $(function() {
 											divGoodsSizeChoose.className = 'goods__wrapper__size';
 											divGoodsWrapperContent.appendChild(divGoodsSizeChoose);
 									//взять в цикл
-									var divSize = document.createElement('div');
+									console.log(myObj.size.length);
+									for (var i = 0; i <= myObj.size.length - 1; i++) {
+										var divSize = document.createElement('div');
 											divSize.className = 'size';
-											divSize.innerHTML = 'ajax';
+											divSize.innerHTML = myObj.size[i];
 											divGoodsSizeChoose.appendChild(divSize);
+									};
+									
 									// end cukl
 
 
