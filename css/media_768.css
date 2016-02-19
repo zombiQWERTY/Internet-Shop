@@ -27,7 +27,6 @@
 	.items-grid__item{
 		margin: 0 auto;
 		width: 70%;
-		height: 250px;
 		overflow: hidden;
 	}
 	.items-grid__item img{
@@ -82,7 +81,7 @@
 
 	}
 	.footer__section:last-child{
-		border-top: 1px solid rgba(0, 0, 0, .1);
+/*		border-top: 1px solid rgba(0, 0, 0, .1);*/
 	}
 	.footer__section__title{
 		margin-top: 30px;
@@ -103,6 +102,16 @@
 		margin-bottom: 30px;
 		border-bottom: 1px solid #e5e5e5;
 		text-align: center;
+	}
+	.header_descr_table{
+		font-size: 14px;
+	}
+	.visible_small_screen {
+		display: block;
+	}
+	
+	.visible_big_screen{
+		display: none;
 	}
 
 }

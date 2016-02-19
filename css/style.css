@@ -5,7 +5,7 @@
   url("../fonts/Lato/Regular/Lato-Regular.woff") format("woff"),
   url("../fonts/Lato/Regular/Lato-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   url("../fonts/Lato/Italic/LatoItalic.woff") format("woff"),
   url("../fonts/Lato/Italic/LatoItalic.ttf") format("truetype");
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
@@ -25,11 +25,11 @@
   url("../fonts/Lato/Bold/LatoBold.woff") format("woff"),
   url("../fonts/Lato/Bold/LatoBold.ttf") format("truetype");
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 body{
-  font-family: Lato, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 .icon {
   display: inline-block;

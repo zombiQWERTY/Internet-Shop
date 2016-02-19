@@ -26,7 +26,6 @@
 	<link rel="stylesheet" href="./slick/slick-theme.css" />
 	<!-- позволяет указать базовый URL, относительно которого будут устанавливаться другие адреса -->
 	 <base href="./" />
-	<link rel="stylesheet" type="text/css" href="footer.css">
 </head>
 <body>
   <div class="wrapper">
@@ -40,7 +39,7 @@
 		<menu class="header__menu">
 		  <ul>
 			<li><a href="#">Woman</a></li>
-			<li><a href="men-clother.html">Men</a></li>
+			<li><a href="category-all.html">Men</a></li>
 			<li><a href="#">Kids</a></li>
 			<li><a href="#">Coming Soon</a></li>
 			<li><a href="#">About</a></li>
@@ -58,7 +57,7 @@
 		  </form>
 		</div>
 		<div class="header__basket">
-		  <a href="#" class="icon icon_basket">Basket (0)</a>
+		  <a href="./shop-cart.html" class="icon icon_basket">Basket (0)</a>
 		</div>
 	  </div>
 	</header>
@@ -74,7 +73,7 @@
 	  <menu>
 		<ul class="menu-tablet__items">
 		  <li><a href="#">Woman</a></li>
-		  <li><a href="men-clother.html">Men</a></li>
+		  <li><a href="category-all.html">Men</a></li>
 		  <li><a href="#">Kids</a></li>
 		  <li><a href="#">Coming Soon</a></li>
 		  <li><a href="#">About</a></li>
@@ -92,51 +91,12 @@
   <main>
 	<h2>Your shopping Bag</h2>
 	<p class="subheader small_letter">Items reserved by limited time only</p>
+	<h2 class="empty_bag">Your shopping Bag is empty</h2>
+	<div class="table_wrapper">
+		
 
-	<table>
-	  <thead>
-		<th>Product</th>
-		<th class="large_td">Description</th>
-		<th class="center">color</th>
-		<th class="center">size</th>
-		<th class="center">qty</th>
-		<th class="center">amount</th>
-		<th class="center">delete</th>
-	  </thead>
-	  <tr>
-		<td>
-		  <div class="product_item_basket">
-			<img src="img/men-clother/3_600 x 600.jpg">
-		  </div>
-		</td>
-		<td class="large_td">
-		  <h3 class="header_descr_table">Take from ajax</h3>
-		  <p class="sub_descr">Ref. 2514/302</p>
-		</td>
-		<td class="center">Take from ajax</td>
-		<td class="center">Take from ajax</td>
-		<td class="center">
-			<input type="number" value="1" min="1" max="5">
-		</td>
-		<td class="center">Take from ajax</td>
-		<td class="center">
-		  <img class="delete" src="img/delete.svg" alt="delete"> 
-		</td>
-	  </tr>
-	  <tfoot>
-	    <tr>
-		    <th class="right_side" colspan="5">Subtotal</th>
-			<!-- <th>Description</th> -->
-			<!-- <th>color</th>
-			<th>size</th>
-			<th>qty</th>
-			<th>amount</th> -->
-			<th class="left_side">Sub</th>
-			<th></th>
-	    </tr>
-	  </tfoot>
-	</table>
-
+		
+	</div>
 	<div class="order">
 		<a href="category-all.html">Continue shopping</a>
 		<a class="big_button" id="order">Order now</a>

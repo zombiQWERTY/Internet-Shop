@@ -4,6 +4,7 @@ $(function() {
 			dataType: 'json',
 			url: './json/clothes.json',
 			success: function(data) {
+
 				var goods_key = Object.keys(data);
 				console.log('Connect');
 				var my_hash = location.hash; 
@@ -14,6 +15,7 @@ $(function() {
 				$.each(data, function(key, myArray) {
 					myArray.filter(function(myObj) {
 						if (myObj.id == myId) {
+							localStorage.setItem('product', JSON.stringify(myObj));
 							console.log(myObj);   
 							console.log(myObj.name);   
 							console.log(typeof myObj);   
@@ -85,6 +87,9 @@ $(function() {
 								building_gallery();
 		    		}
 					});
+
+
+					
 				});
 					
 					var $addToCart = $('.addToCart');
@@ -104,10 +109,9 @@ $(function() {
 					var $this;
 					$(".goods__wrapper__size").on( "click", ".size", function() {
 						$this = $(this);
-						$this.toggleClass(function() {
-							return 'green';
-						});
+						$this.toggleClass('green');
 						setAddCartActive($this.html());
+						localStorage.setItem('params', { 'size': $this.html() });
 					});
 
 	

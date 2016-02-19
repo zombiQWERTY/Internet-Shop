@@ -11,6 +11,7 @@ $(function () {
     if (window.innerWidth <= 1024 && window.innerWidth > 768 ||
         window.innerWidth <= 560 && window.innerWidth) {
       $searchMobile.toggle();
+      $toggler.hide();
     } else {
       $search.toggleClass('search_opened');
       $searchForm.toggleClass('search__form_showen');
@@ -29,11 +30,10 @@ $(function () {
   });
 
   // pdp
-  setTimeout(function(){ // Асинхронность через нулевой таймаут
+  setTimeout(function(){
     var $gallery     = $(".goods__gallery-main");
     var $galleryItem = $(".goods__gallery_wrapper-item");
     var img;
-
     $galleryItem.on('click', function(){
       $galleryItem.removeClass("active");
       
@@ -43,7 +43,7 @@ $(function () {
 
       $gallery.html(img);
     });
-  }, 0);
+  }, 1000);
 
   var $cart     = $(".addToCart");
   $cart.on('click', function(){ 

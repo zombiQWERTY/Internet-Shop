@@ -22,6 +22,7 @@ td{
 }
 .large_td{
 	width: 40%;
+	margin: 10px 0;
 }
 
 .small_letter, .subheader{
@@ -52,6 +53,7 @@ td{
 }
 .delete{
 	width: 20px;
+	text-align: center;
 }
 .center{
 	text-align: center;
@@ -113,6 +115,28 @@ tfoot{
 .order a{
 	padding: 10px 0;
 }
-#order{
-/*	margin-left: 20px;*/
+
+.visible_small_screen .delete_table{
+	margin-top: 0;
+	width: 20px;
+}
+
+.visible_small_screen .table_amount{
+	text-align: center;
+	margin-bottom: 0;
+  padding-top: 60px;
+}
+
+.visible_small_screen {
+	display: none;
+}
+	
+.visible_big_screen{
+	display: block;
+}
+.empty_bag{
+	margin: 50px 0;
+}
+.center{
+	text-align: center;
 }
