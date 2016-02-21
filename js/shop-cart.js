@@ -10,7 +10,6 @@ $(function() {
         tableObj.appendChild(trObj);
 
         var tdObj = document.createElement('td');
-        // tdObj.innerHTML = '1';
         trObj.appendChild(tdObj);
 
         var divObj = document.createElement('div');
@@ -87,7 +86,7 @@ $(function() {
         tdObj.appendChild(divObj);
 
         var imgObj = document.createElement('img');
-        imgObj.src = 'img/men-clother/3_600 x 600.jpg'; //ajax
+        imgObj.src = item.img[0];; //ajax
         divObj.appendChild(imgObj);
 
         var td_large = document.createElement('td');
@@ -96,7 +95,7 @@ $(function() {
 
         var h3Obj = document.createElement('h3');
         h3Obj.className = 'header_descr_table';
-        h3Obj.innerHTML = 'ajax descr';
+        h3Obj.innerHTML = item.name;
         td_large.appendChild(h3Obj);
 
 				var p_sub_descr = document.createElement('p');
@@ -106,12 +105,12 @@ $(function() {
 
 				var p_table_color = document.createElement('p');
 				p_table_color.className = 'table_color';
-				p_table_color.innerHTML = 'color ajax';
+				p_table_color.innerHTML = item.color;
 				td_large.appendChild(p_table_color);
 
 				var p_table_size = document.createElement('p');
 				p_table_size.className = 'table_size';
-				p_table_size.innerHTML = 'ajax size';
+				p_table_size.innerHTML = item.needfullSize.join(', ');
 				td_large.appendChild(p_table_size);
 
 				var input_number_table = document.createElement('input');
@@ -132,7 +131,7 @@ $(function() {
 
 				var pAmount = document.createElement('p');
 				pAmount.className = 'table_amount';
-				pAmount.innerHTML = 'Amount';
+				pAmount.innerHTML = '&euro; ' +item.price;
 				tdDelete.appendChild(pAmount);
 
 			}
@@ -146,5 +145,17 @@ $(function() {
 				building_small_table(item);
 			}
 		}
+
+		var deleteItem = $('.delete_table').on('click',function() {
+			$this = $(this);
+			console.log($this);
+			// $this.removeClass('delete_table');
+
+			$this.addClass('delete_item');
+			$this.parent().parent().remove();
+		});
+		
 	}
 });
+
+

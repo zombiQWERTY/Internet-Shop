@@ -119,7 +119,7 @@ $(function() {
 							var neededSize = false;
 							for (var i = 0; i <= object.needfullSize.length - 1; i++) {
 								if (object.needfullSize[i] == html) {
-									neededSize = true;
+										neededSize = true;
 								}
 							}
 							if (!neededSize) {

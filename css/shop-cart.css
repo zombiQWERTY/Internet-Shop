@@ -140,3 +140,6 @@ tfoot{
 .center{
 	text-align: center;
 }
+.delete_item{
+	display: none;
+}
