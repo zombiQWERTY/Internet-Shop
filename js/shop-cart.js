@@ -1,52 +1,12 @@
 $(function() {
 	if (window.location.pathname.indexOf('shop-cart') + 1) {
 		
-		objItem = JSON.parse(localStorage.getItem('product'));
-		console.log(objItem);
+		objItems = localStorage.getItem('product');
+
 		function building_big_table() {
-				var tableObj = document.createElement('table');
-        tableObj.className = 'visible_big_screen';
-        var tableWrapper = document.getElementsByClassName('table_wrapper')[0];
-        tableWrapper.appendChild(tableObj);
+			 var tableObj = document.getElementsByClassName('visible_big_screen')[0];
 
-        var theadObj = document.createElement('thead');
-        tableObj.appendChild(theadObj);
-
-        var thProduct = document.createElement('th');
-        thProduct.innerHTML = 'Product';
-        theadObj.appendChild(thProduct);
-
-        var thDescription = document.createElement('th');
-        thDescription.className = 'large_td';
-        thDescription.innerHTML = 'Description';
-        theadObj.appendChild(thDescription);
-
-        var thColor = document.createElement('th');
-        thColor.innerHTML = 'Color';
-        thColor.className = 'center';
-        theadObj.appendChild(thColor);
-
-        var thSize = document.createElement('th');
-        thSize.innerHTML = 'Size';
-        thSize.className = 'center';
-        theadObj.appendChild(thSize);
-
-        var thQty = document.createElement('th');
-        thQty.innerHTML = 'Qty';
-        thQty.className = 'center';
-        theadObj.appendChild(thQty);
-
-        var thAmount = document.createElement('th');
-        thAmount.innerHTML = 'Amount';
-        thAmount.className = 'center';
-        theadObj.appendChild(thAmount);
-
-        var thDelete = document.createElement('th');
-        thDelete.innerHTML = 'Delete';
-        thDelete.className = 'center';
-        theadObj.appendChild(thDelete);
-
-        var trObj = document.createElement('tr');
+	      var trObj = document.createElement('tr');
         tableObj.appendChild(trObj);
 
         var tdObj = document.createElement('td');
@@ -58,7 +18,7 @@ $(function() {
         tdObj.appendChild(divObj);
 
         var imgObj = document.createElement('img');
-        imgObj.src = 'img/men-clother/3_600 x 600.jpg'; //ajax
+        imgObj.src = item.img[0]; //ajax
         divObj.appendChild(imgObj);
 
         var td_large = document.createElement('td');
@@ -67,7 +27,7 @@ $(function() {
 
         var h3Obj = document.createElement('h3');
         h3Obj.className = 'header_descr_table';
-        h3Obj.innerHTML = 'ajax descr';
+        h3Obj.innerHTML = item.name;
         td_large.appendChild(h3Obj);
 
 				var p_sub_descr = document.createElement('p');
@@ -76,13 +36,13 @@ $(function() {
 				td_large.appendChild(p_sub_descr);
 
 				var tdColor = document.createElement('td');
-				tdColor.innerHTML = 'ajax color';
+				tdColor.innerHTML = item.color;
 				tdColor.className = "center";
 				trObj.appendChild(tdColor);
 
 				var tdSize = document.createElement('td');
 				tdSize.className = "center";
-				tdSize.innerHTML = 'ajax size';
+				tdSize.innerHTML = item.needfullSize.join(', ');
 				trObj.appendChild(tdSize);
 
 				var tdQty = document.createElement('td');
@@ -99,7 +59,7 @@ $(function() {
 
 				var tdAmount = document.createElement('td');
 				tdAmount.className = 'table_amount center';
-				tdAmount.innerHTML = 'Amount';
+				tdAmount.innerHTML =  '&euro; ' +item.price;
 				trObj.appendChild(tdAmount);
 
 				var tdDelete = document.createElement('td');
@@ -110,53 +70,11 @@ $(function() {
 				imgDelete.alt = 'delete';
 				imgDelete.src = './img/delete.svg';
 				tdDelete.appendChild(imgDelete);
-
-				var tableFoot = document.createElement('tfoot');
-				tableObj.appendChild(tableFoot);
-
-				var trTableFoot = document.createElement('tr');
-				tableFoot.appendChild(trTableFoot);
-
-				var thTableFoot_rightSide = document.createElement('th');
-				thTableFoot_rightSide.className = 'right_side';
-				thTableFoot_rightSide.colSpan = "5";
-				thTableFoot_rightSide.innerHTML = 'Subtotal';
-				trTableFoot.appendChild(thTableFoot_rightSide);
-
-				var thTableFoot_leftSide = document.createElement('th');
-				thTableFoot_leftSide.className = 'left_side';
-				thTableFoot_leftSide.innerHTML = 'Sub';
-				trTableFoot.appendChild(thTableFoot_leftSide);
-
-				var thTableFoot_empty = document.createElement('th');
-				trTableFoot.appendChild(thTableFoot_empty);
 			}
-		building_big_table()	
-
+		
 
 			function building_small_table() {
-				var tableObj = document.createElement('table');
-        tableObj.className = 'visible_small_screen';
-        var tableWrapper = document.getElementsByClassName('table_wrapper')[0];
-        tableWrapper.appendChild(tableObj);
-
-        var theadObj = document.createElement('thead');
-        tableObj.appendChild(theadObj);
-
-        var thProduct = document.createElement('th');
-        thProduct.innerHTML = 'Product';
-        theadObj.appendChild(thProduct);
-
-        var thDescription = document.createElement('th');
-        thDescription.className = 'large_td';
-        thDescription.innerHTML = 'Description';
-        theadObj.appendChild(thDescription);
-
-        var thDelete = document.createElement('th');
-        thDelete.className = 'delete';
-        thDelete.innerHTML = 'Delete';
-        theadObj.appendChild(thDelete);
-
+				var tableObj = document.getElementsByClassName('visible_small_screen')[0];
         var trObj = document.createElement('tr');
         tableObj.appendChild(trObj);
 
@@ -217,23 +135,16 @@ $(function() {
 				pAmount.innerHTML = 'Amount';
 				tdDelete.appendChild(pAmount);
 
-				var tableFoot = document.createElement('tfoot');
-				tableObj.appendChild(tableFoot);
-
-				var trTableFoot = document.createElement('tr');
-				tableFoot.appendChild(trTableFoot);
-
-				var thTableFoot_rightSide = document.createElement('th');
-				thTableFoot_rightSide.className = 'right_side';
-				thTableFoot_rightSide.colSpan = "2";
-				thTableFoot_rightSide.innerHTML = 'Subtotal';
-				trTableFoot.appendChild(thTableFoot_rightSide);
-
-				var thTableFoot_leftSide = document.createElement('th');
-				thTableFoot_leftSide.className = 'left_side';
-				thTableFoot_leftSide.innerHTML = 'Sub';
-				trTableFoot.appendChild(thTableFoot_leftSide);
 			}
-		building_small_table()	
+
+		var items = JSON.parse(objItems);
+		if (items) {
+			var item;
+			for (var i = 0; i <= items.length - 1; i++) {
+				item = items[i];
+				building_big_table(item);
+				building_small_table(item);
+			}
+		}
 	}
 });

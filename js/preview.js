@@ -1,3 +1,24 @@
+function SaveDataToLocalStorage(data, table) {
+	var a = [];	
+  // Parse the serialized data back into an aray of objects
+  if (localStorage[table]) {
+	  a = JSON.parse(localStorage[table]);
+	}
+  // Push the new data (whether it be an object or anything else) onto the array
+  var exists = false;
+  for (var i = 0; i <= a.length - 1; i++) {
+  	console.log(a[i].Article_number, data.Article_number);
+  	if (a[i].Article_number == data.Article_number) {
+  		exists = true;
+  	}
+  }
+  if (!exists) {
+	  a.push(data);
+  }
+  // Re-serialize the array back into a string and store it in localStorage
+  localStorage[table] = JSON.stringify(a);
+}
+
 $(function() {
 	if (window.location.pathname.indexOf('pdp') + 1) {
 		$.ajax({
@@ -9,19 +30,19 @@ $(function() {
 				console.log('Connect');
 				var my_hash = location.hash; 
 				var myId = my_hash.substr(my_hash.indexOf("#") + 1); 
-				console.log(myId);
-				console.log(goods_key);
+				// console.log(myId);
+				// console.log(goods_key);
+				var object = {};
 
 				$.each(data, function(key, myArray) {
 					myArray.filter(function(myObj) {
 						if (myObj.id == myId) {
-							localStorage.setItem('product', JSON.stringify(myObj));
-							console.log(myObj);   
-							console.log(myObj.name);   
-							console.log(typeof myObj);   
+							object = myObj;
+							// console.log(myObj);   
+							// console.log(myObj.name);   
+							// console.log(typeof myObj);   
 
 								function building_gallery () {
-										console.log(myObj.img[1]); 
 								var divGoodsGallery = document.getElementsByClassName('goods__gallery')[0];
 								var divGoodsGalleryMain = document.createElement('div');
 										divGoodsGalleryMain.className = 'goods__gallery-main';
@@ -68,8 +89,7 @@ $(function() {
 								var divGoodsSizeChoose = document.createElement('div');
 										divGoodsSizeChoose.className = 'goods__wrapper__size';
 										divGoodsWrapperContent.appendChild(divGoodsSizeChoose);
-										console.log(myObj.size.length);
-										
+									
 										for (var i = 0; i <= myObj.size.length - 1; i++) {
 											var divSize = document.createElement('div');
 												divSize.className = 'size';
@@ -92,15 +112,37 @@ $(function() {
 					
 				});
 					
+					object.needfullSize = [];
 					var $addToCart = $('.addToCart');
-					var setAddCartActive = function(html) {
-						console.log(html);
+					var setAddCartActive = function($this, html) {
+						if ($this.hasClass('green')) {
+							var neededSize = false;
+							for (var i = 0; i <= object.needfullSize.length - 1; i++) {
+								if (object.needfullSize[i] == html) {
+									neededSize = true;
+								}
+							}
+							if (!neededSize) {
+								object.needfullSize.push(html);
+							}
+						} else {
+							for (var i = 0; i <= object.needfullSize.length - 1; i++) {
+								if (object.needfullSize[i].indexOf(html) + 1) {
+									object.needfullSize[i] = null;
+								}
+							}
+
+						}
 						if ($('.size').hasClass('green')) {
 							$addToCart.removeClass('disabled');
 							$addToCart.attr('href', './shop-cart.html');
 						} else {
 							$addToCart.addClass('disabled');
 							$addToCart.removeAttr('href');
+						}
+
+						if ($addToCart.hasClass('disabled')) {
+							object.needfullSize = [];
 						}
 					};
 
@@ -110,11 +152,14 @@ $(function() {
 					$(".goods__wrapper__size").on( "click", ".size", function() {
 						$this = $(this);
 						$this.toggleClass('green');
-						setAddCartActive($this.html());
-						localStorage.setItem('params', { 'size': $this.html() });
+						setAddCartActive($this, $this.html());
 					});
 
-	
+					$addToCart.on('click', function(e) {
+						e.preventDefault();
+						SaveDataToLocalStorage(object, 'product');
+						window.location = $(this).attr('href');
+					});	
 			},
 			error: function(data) {
 					console.log('Connect error');
