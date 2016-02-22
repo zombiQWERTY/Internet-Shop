@@ -128,7 +128,7 @@ $(function() {
 				trObj.appendChild(tdDelete);
 
 				var imgDelete = document.createElement('img');
-				imgDelete.className = 'delete_table';
+				imgDelete.className = 'delete';
 				imgDelete.alt = 'delete';
 				imgDelete.src = './img/delete.svg';
 				imgDelete.dataset.art = item.Article_number;
@@ -170,7 +170,9 @@ $(function() {
 			hideTable();
 		}
 		
-		var deleteItem = $('.delete_table').on('click', function() {
+		var deleteItem = $('.delete').on('click', function() {
+			var $items_count = document.getElementById('cart-counter');
+			var items_count  = $items_count.innerHTML;
 			$this = $(this);
 			$this.parent().parent().remove();
 			var art = $this.data('art');
@@ -180,7 +182,8 @@ $(function() {
 					if (items[key] != null) {
 						if (items[key].Article_number == art) {
 							delete items[key];
-							// remove --
+							items_count--;
+							break;
 						}
 					} else {
 						nulls++;
@@ -188,13 +191,11 @@ $(function() {
 				}
 			}
 
+			$items_count.innerHTML = items_count;
 
 			if (nulls == Object.keys(items).length) {
 				hideTable();
 			}
-
-
-
 			localStorage['product'] = JSON.stringify(items);
 
 			console.log(localStorage.getItem('product'));
@@ -206,7 +207,6 @@ $(function() {
 
 			// console.log($('input').html);
 		})
-
 
 
 	}

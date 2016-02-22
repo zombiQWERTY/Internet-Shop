@@ -52,6 +52,25 @@ $(function () {
   });
   // end pdp
 
+  //shop-cart
+  var items_count = 0;
+  var objItems = localStorage.getItem('product');
+  var items = JSON.parse(objItems);
+  var hasNulls = 0;
+  if (items) {
+    var item;
+    for (var i = 0; i <= items.length - 1; i++) {
+      item = items[i];
+      if (item != null) {
+        items_count++;
+      }
+    }
+  }
+
+  document.getElementById('cart-counter').innerHTML = items_count;
+
+  //end shop-cart
+
   $('.carousel').slick({
     dots:          false,
     infinite:      true,
