@@ -3,10 +3,13 @@ $(function() {
 		
 		objItems = localStorage.getItem('product');
 
-		function building_big_table() {
+		function building_big_table(item) {
+			console.log(item);
 			 var tableObj = document.getElementsByClassName('visible_big_screen')[0];
 
 	      var trObj = document.createElement('tr');
+
+
         tableObj.appendChild(trObj);
 
         var tdObj = document.createElement('td');
@@ -68,11 +71,12 @@ $(function() {
 				imgDelete.className = 'delete';
 				imgDelete.alt = 'delete';
 				imgDelete.src = './img/delete.svg';
+				imgDelete.dataset.art = item.Article_number;
 				tdDelete.appendChild(imgDelete);
 			}
 		
 
-			function building_small_table() {
+			function building_small_table(item) {
 				var tableObj = document.getElementsByClassName('visible_small_screen')[0];
         var trObj = document.createElement('tr');
         tableObj.appendChild(trObj);
@@ -127,6 +131,7 @@ $(function() {
 				imgDelete.className = 'delete_table';
 				imgDelete.alt = 'delete';
 				imgDelete.src = './img/delete.svg';
+				imgDelete.dataset.art = item.Article_number;
 				tdDelete.appendChild(imgDelete);
 
 				var pAmount = document.createElement('p');
@@ -137,24 +142,73 @@ $(function() {
 			}
 
 		var items = JSON.parse(objItems);
+		var hasNulls = 0;
 		if (items) {
 			var item;
 			for (var i = 0; i <= items.length - 1; i++) {
 				item = items[i];
-				building_big_table(item);
-				building_small_table(item);
+				if (item != null) {
+					building_big_table(item);
+					building_small_table(item);
+				} else {
+					hasNulls++;
+				}
 			}
+		} else {
+			hasNulls++;
 		}
 
-		var deleteItem = $('.delete_table').on('click',function() {
-			$this = $(this);
-			console.log($this);
-			// $this.removeClass('delete_table');
+		var hideTable = function() {
+				document.getElementsByClassName('visible_big_screen')[0].style.display = 'none';
+				document.getElementsByClassName('visible_small_screen')[0].style.display = 'none';
+				document.getElementsByClassName('empty_bag')[0].style.display = 'block';		
+				document.getElementById('order').style.display = 'none';		
 
-			$this.addClass('delete_item');
+		}
+
+		if (hasNulls == Object.keys(items).length) {
+			hideTable();
+		}
+		
+		var deleteItem = $('.delete_table').on('click', function() {
+			$this = $(this);
 			$this.parent().parent().remove();
+			var art = $this.data('art');
+			var nulls = 0;
+			for (var key in items) {
+				if (items.hasOwnProperty(key)) {
+					if (items[key] != null) {
+						if (items[key].Article_number == art) {
+							delete items[key];
+							// remove --
+						}
+					} else {
+						nulls++;
+					}
+				}
+			}
+
+
+			if (nulls == Object.keys(items).length) {
+				hideTable();
+			}
+
+
+
+			localStorage['product'] = JSON.stringify(items);
+
+			console.log(localStorage.getItem('product'));
 		});
 		
+		var subtotal = $('tr').on('change', function () {
+			$this = $(this);
+			// var count = $this.price;
+
+			// console.log($('input').html);
+		})
+
+
+
 	}
 });
 

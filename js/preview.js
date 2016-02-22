@@ -7,13 +7,15 @@ function SaveDataToLocalStorage(data, table) {
   // Push the new data (whether it be an object or anything else) onto the array
   var exists = false;
   for (var i = 0; i <= a.length - 1; i++) {
-  	console.log(a[i].Article_number, data.Article_number);
-  	if (a[i].Article_number == data.Article_number) {
-  		exists = true;
+  	if (a[i] != null) {
+	  	if (a[i].Article_number == data.Article_number) {
+	  		exists = true;
+	  	}
   	}
   }
   if (!exists) {
 	  a.push(data);
+	  //add ++
   }
   // Re-serialize the array back into a string and store it in localStorage
   localStorage[table] = JSON.stringify(a);

@@ -136,10 +136,8 @@ tfoot{
 }
 .empty_bag{
 	margin: 50px 0;
+	display: none;
 }
 .center{
 	text-align: center;
-}
-.delete_item{
-	display: none;
 }
