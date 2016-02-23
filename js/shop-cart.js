@@ -3,8 +3,26 @@ $(function() {
 		
 		objItems = localStorage.getItem('product');
 
+		var setCount = function(price_count) {
+			var amount = 0;
+			for (var i = 0; i <= price_count.length - 1; i++) {
+				amount += parseFloat(price_count[i].innerHTML);
+			}
+			document.getElementsByClassName('left_side')[0].innerHTML = amount.toFixed(2);
+		};
+
+
+		var toCount = function (input, price) {
+	    var thisTable = input.parentNode.parentNode.parentNode;
+			input.addEventListener('change', function() {
+	    	var value = parseInt(input.value) * price;
+	    	thisTable.getElementsByClassName('myprice')[0].innerHTML = value.toFixed(2);
+	    	setCount(thisTable.getElementsByClassName('myprice'));
+	  	});
+	  	setCount(thisTable.getElementsByClassName('myprice'));
+		}
+
 		function building_big_table(item) {
-			console.log(item);
 			 var tableObj = document.getElementsByClassName('visible_big_screen')[0];
 
 	      var trObj = document.createElement('tr');
@@ -53,6 +71,7 @@ $(function() {
 
 				var input_number_table = document.createElement('input');
 				input_number_table.className = "center";
+				input_number_table.setAttribute("id", 'subCount');
 				input_number_table.setAttribute("type", "number");
 				input_number_table.value = '1';
 				input_number_table.min = 1;
@@ -61,7 +80,8 @@ $(function() {
 
 				var tdAmount = document.createElement('td');
 				tdAmount.className = 'table_amount center';
-				tdAmount.innerHTML =  '&euro; ' +item.price;
+				tdAmount.innerHTML =  '&euro; <span class="myprice">' +item.price+'</span>';
+
 				trObj.appendChild(tdAmount);
 
 				var tdDelete = document.createElement('td');
@@ -73,6 +93,8 @@ $(function() {
 				imgDelete.src = './img/delete.svg';
 				imgDelete.dataset.art = item.Article_number;
 				tdDelete.appendChild(imgDelete);
+
+				toCount(input_number_table, item.price);
 			}
 		
 
@@ -119,6 +141,7 @@ $(function() {
 
 				var input_number_table = document.createElement('input');
 				input_number_table.setAttribute("type", "number");
+				input_number_table.setAttribute("class", 'subCount');
 				input_number_table.value = '1';
 				input_number_table.min = 1;
 				input_number_table.max = 5;
@@ -136,8 +159,10 @@ $(function() {
 
 				var pAmount = document.createElement('p');
 				pAmount.className = 'table_amount';
-				pAmount.innerHTML = '&euro; ' +item.price;
+				pAmount.innerHTML =  '&euro; <span class="myprice">' +item.price+'</span>';
 				tdDelete.appendChild(pAmount);
+				toCount(input_number_table, item.price);
+
 
 			}
 
@@ -166,6 +191,28 @@ $(function() {
 
 		}
 
+		var buttonToOpenForm = document.getElementById('order');
+			buttonToOpenForm.onclick=function(){
+				var order_form = document.getElementsByClassName('order_form')[0];
+				order_form.classList.remove('order_form');
+				order_form.classList.add('show_form');
+				console.log(order_form);
+
+			}
+			
+			var orderSubmit = function(){
+				$('.input').attr('value', '');
+				items_count = '0';
+				var products = JSON.parse(localStorage['product']);
+				for (var i = 0; i < products.length; i++) {
+					if (products[i] != null) {
+						products[i] = null;
+					}
+				}
+				localstorage['product'] = JSON.stringify(products);
+			}
+
+
 		if (hasNulls == Object.keys(items).length) {
 			hideTable();
 		}
@@ -183,6 +230,7 @@ $(function() {
 						if (items[key].Article_number == art) {
 							delete items[key];
 							items_count--;
+							setCount(document.getElementsByClassName('visible_big_screen')[0].getElementsByClassName('myprice'));
 							break;
 						}
 					} else {
@@ -201,12 +249,11 @@ $(function() {
 			console.log(localStorage.getItem('product'));
 		});
 		
-		var subtotal = $('tr').on('change', function () {
-			$this = $(this);
-			// var count = $this.price;
 
-			// console.log($('input').html);
-		})
+
+
+
+
 
 
 	}

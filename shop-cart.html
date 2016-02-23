@@ -144,6 +144,20 @@
 		<a href="category-all.html">Continue shopping</a>
 		<a class="big_button" id="order">Order now</a>
 	</div>
+
+	<div class="order_form">
+    <h2>Оформление заказа</h2>
+    <hr>
+    <form class="form_wrapper" action="./thank-you.html" method="" onsubmit="orderSubmit();return false;">
+        <!--action="/internet-shop/main-page.html"-->
+        <label for="Surname">Фамилия</label><br> <input type="text" placeholder="Введите фамилию" id="Surname" pattern="[A-Za-zА-Яа-яЁё]{2,}" required/><br>
+        <label for="Name">Имя</label><br> <input type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Введите имя"  id="Name" required><br>
+        <label for="Phone">Мобильный телефон</label> <br><input type="tel" placeholder="10 цифр мобильного"  pattern="[0-9]{10,}" id="Phone" required><br>
+        <label for="mail">E-mail</label> <br><input type="email" placeholder="Введите e-mail" id="mail" required><br>
+        <label for="index">Почтовый индекс</label> <br><input placeholder="5 цифр" pattern="[0-9]{5}" id="index" required><br>
+        <input id="submit" type="submit"/>
+    </form>
+	</div>
 	
 
 
@@ -207,7 +221,7 @@
 	  </div>
 	</footer>
 
-  </div>
+	</div>
 
   
 	<script src="./js/common/jquery.js"></script>

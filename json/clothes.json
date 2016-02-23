@@ -10,7 +10,7 @@
       ],
       "color": "One Color",
       "src": "../../img/men-clother/men-coats/1/1.jpg",
-      "price": "99",
+      "price": "99.95",
       "Article_number": "15268390498",
       "id": "coat1",
       "size": ["S","M","L"],
@@ -25,7 +25,7 @@
         "img/men-clother/men-coats/2/4.jpg"
       ],
       "color": "One Color",
-      "price": "69",
+      "price": "69.95",
       "Article_number": "57920474958",
       "id": "coat2",
       "size": ["XS","S","M","L"],
@@ -40,7 +40,7 @@
         "img/men-clother/men-coats/3/4.jpg"
       ],
       "color": "One Color",
-      "price": "50",
+      "price": "50.95",
       "Article_number": "28403847",
       "id": "coat3",
       "size": ["S","M","L"],
@@ -55,7 +55,7 @@
         "img/men-clother/men-coats/4/4.jpg"
       ],
       "color": "One Color",
-      "price": "78",
+      "price": "78.95",
       "Article_number": "2748003755",
       "id": "coat4",
       "size": ["XS","S","M","L"],
@@ -72,7 +72,7 @@
         "img/men-clother/men-outwear/1/4.jpg"
       ],
       "color": "One Color",
-      "price": "85",
+      "price": "85.95",
       "Article_number": "394965938475",
       "id": "outerwear1",
       "size": ["S","M","L"],
@@ -87,7 +87,7 @@
         "img/men-clother/men-outwear/2/4.jpg"
       ],
       "color": "One Color",
-      "price": "59",
+      "price": "59.95",
       "Article_number": "74757691628",
       "id": "outerwear2",
       "size": ["S","M","L"],
@@ -102,7 +102,7 @@
         "img/men-clother/men-outwear/3/4.jpg"
       ],
       "color": "One Color",
-      "price": "63",
+      "price": "63.95",
       "Article_number": "33848504849",
       "id": "outerwear3",
       "size": ["S","M","L"],
@@ -117,7 +117,7 @@
         "img/men-clother/men-outwear/4/4.jpg"
       ],
       "color": "One Color",
-      "price": "82",
+      "price": "82.95",
       "Article_number": "263748958732",
       "id": "outerwear4",
       "size": ["XS","S","M","L"],
@@ -134,7 +134,7 @@
         "img/men-clother/men-t-shirts/1/4.jpg"
       ],
       "color": "One Color",
-      "price": "47",
+      "price": "47.95",
       "Article_number": "284756928326",
       "id": "t_shirts1",
       "size": ["S","M","L"],
@@ -149,7 +149,7 @@
         "img/men-clother/men-t-shirts/2/4.jpg"
       ],
       "color": "One Color",
-      "price": "39",
+      "price": "39.95",
       "Article_number": "923894987543",
       "id": "t_shirts2",
       "size": ["XS","S","M","L"],
@@ -164,7 +164,7 @@
         "img/men-clother/men-t-shirts/3/4.jpg"
       ],
       "color": "One Color",
-      "price": "49",
+      "price": "49.95",
       "Article_number": "89758989698",
       "id": "t_shirts3",
       "size": ["S","M","L"],
@@ -179,7 +179,7 @@
         "img/men-clother/men-t-shirts/4/4.jpg"
       ],
       "color": "One Color",
-      "price": "58",
+      "price": "58.95",
       "Article_number": "2387894738593",
       "id": "t_shirts4",
       "size": ["XS","S","M","L"],
