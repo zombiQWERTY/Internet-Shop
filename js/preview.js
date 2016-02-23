@@ -116,6 +116,20 @@ $(function() {
 					
 					object.needfullSize = [];
 					var $addToCart = $('.addToCart');
+					var disableBtn = function() {
+						if ($('.size').hasClass('green')) {
+							$addToCart.removeClass('disabled');
+							$addToCart.attr('href', './shop-cart.html');
+						} else {
+							$addToCart.addClass('disabled');
+							$addToCart.attr('href', 'javascript: return:false');
+
+						}
+
+						if ($addToCart.hasClass('disabled')) {
+							object.needfullSize = [];
+						}
+					};
 					var setAddCartActive = function($this, html) {
 						if ($this.hasClass('green')) {
 							var neededSize = false;
@@ -133,34 +147,45 @@ $(function() {
 									object.needfullSize[i] = null;
 								}
 							}
-
 						}
-						if ($('.size').hasClass('green')) {
-							$addToCart.removeClass('disabled');
-							$addToCart.attr('href', './shop-cart.html');
-						} else {
-							$addToCart.addClass('disabled');
-							$addToCart.removeAttr('href');
-						}
-
-						if ($addToCart.hasClass('disabled')) {
-							object.needfullSize = [];
-						}
+						disableBtn();
 					};
+					// $addToCart.on('click', function(event) {
+					// 	if $addToCart.hasClass('disabled'){
+					// 		 event.preventDefault();
+					// 		 // return false;
+					// 	}
+					// })
 
 
 					var sizeClass = document.getElementsByClassName('size');
-					var $this;
+					// var $this;
+					// $(".goods__wrapper__size").on( "click", ".size", function() {
+					// 	$this = $(this);
+					// 	$this.toggleClass('green');
+					// 	setAddCartActive($this, $this.html());
+					// });
+					var clicked = true;
 					$(".goods__wrapper__size").on( "click", ".size", function() {
+						var $this;
 						$this = $(this);
-						$this.toggleClass('green');
-						setAddCartActive($this, $this.html());
+						if ($this.hasClass('green')) {
+							$this.removeClass('green');
+							disableBtn();
+							clicked = true;
+						} else {
+							if (clicked) {
+								$this.addClass('green');
+								setAddCartActive($this, $this.html());
+								clicked = false;
+							}
+						}
 					});
 
 					$addToCart.on('click', function(e) {
-						e.preventDefault();
+						//e.preventDefault();
 						SaveDataToLocalStorage(object, 'product');
-						window.location = $(this).attr('href');
+						//window.location = $(this).attr('href');
 					});	
 			},
 			error: function(data) {

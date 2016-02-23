@@ -199,18 +199,20 @@ $(function() {
 				console.log(order_form);
 
 			}
-			
-			var orderSubmit = function(){
+			document.getElementById('order-form').addEventListener('submit', function(event) {
 				$('.input').attr('value', '');
 				items_count = '0';
 				var products = JSON.parse(localStorage['product']);
-				for (var i = 0; i < products.length; i++) {
+				for (var i = 0; i <= products.length - 1; i++) {
 					if (products[i] != null) {
 						products[i] = null;
 					}
 				}
-				localstorage['product'] = JSON.stringify(products);
-			}
+				localStorage['product'] = JSON.stringify(products);
+				window.location.href = '/thank-you.html';
+				event.preventDefault();
+				return false;
+			});
 
 
 		if (hasNulls == Object.keys(items).length) {
@@ -245,8 +247,6 @@ $(function() {
 				hideTable();
 			}
 			localStorage['product'] = JSON.stringify(items);
-
-			console.log(localStorage.getItem('product'));
 		});
 		
 

@@ -146,17 +146,25 @@
 	</div>
 
 	<div class="order_form">
-    <h2>Оформление заказа</h2>
+    <h2>Ordering</h2>
     <hr>
-    <form class="form_wrapper" action="./thank-you.html" method="" onsubmit="orderSubmit();return false;">
+    <form class="form_wrapper" method="" id="order-form" onsubmit="event.preventDefault();">
         <!--action="/internet-shop/main-page.html"-->
-        <label for="Surname">Фамилия</label><br> <input type="text" placeholder="Введите фамилию" id="Surname" pattern="[A-Za-zА-Яа-яЁё]{2,}" required/><br>
-        <label for="Name">Имя</label><br> <input type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Введите имя"  id="Name" required><br>
-        <label for="Phone">Мобильный телефон</label> <br><input type="tel" placeholder="10 цифр мобильного"  pattern="[0-9]{10,}" id="Phone" required><br>
-        <label for="mail">E-mail</label> <br><input type="email" placeholder="Введите e-mail" id="mail" required><br>
-        <label for="index">Почтовый индекс</label> <br><input placeholder="5 цифр" pattern="[0-9]{5}" id="index" required><br>
+        <label for="Surname">Surname</label><br> <input type="text" placeholder="Surname" id="Surname" pattern="[A-Za-zА-Яа-яЁё]{2,}" required/><br>
+        <label for="Name">Name</label><br> <input type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Name"  id="Name" required><br>
+        <label for="Phone">Phone</label> <br><input type="tel" placeholder="10 numbers"  pattern="[0-9]{10,}" id="Phone" required><br>
+        <label for="mail">E-mail</label> <br><input type="email" placeholder="E-mail" id="mail" required><br>
         <input id="submit" type="submit"/>
     </form>
+	</div>
+
+	<div id="delete-section">
+    <div id="delete-section-background"></div>
+    <div id="delete-message">
+        <h2>Вы точно хотите удалить данный товар?</h2>
+        <button id="yes" onclick="confirmToDeleteItem(1)">Да</button>
+        <button id="no" onclick="confirmToDeleteItem(0)">Нет</button>
+    </div>
 	</div>
 	
 

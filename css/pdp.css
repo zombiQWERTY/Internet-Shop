@@ -129,6 +129,11 @@
 }
 .disabled{
   background-color: #959595;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  opacity: .65;
 }
 .disabled:hover{
   background-color: #959595;
