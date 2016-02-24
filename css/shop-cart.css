@@ -192,3 +192,10 @@ tfoot{
     border:1px solid black;
 }
 
+.order_form_delete{
+	  display: inline-block;
+    float: right;
+    padding-right: 7px;
+    font-weight: bold;
+    color: red;
+}

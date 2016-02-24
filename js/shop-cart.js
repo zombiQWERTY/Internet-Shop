@@ -9,6 +9,7 @@ $(function() {
 				amount += parseFloat(price_count[i].innerHTML);
 			}
 			document.getElementsByClassName('left_side')[0].innerHTML = amount.toFixed(2);
+			document.getElementsByClassName('left_side')[1].innerHTML = amount.toFixed(2);
 		};
 
 
@@ -16,7 +17,7 @@ $(function() {
 	    var thisTable = input.parentNode.parentNode.parentNode;
 			input.addEventListener('change', function() {
 	    	var value = parseInt(input.value) * price;
-	    	thisTable.getElementsByClassName('myprice')[0].innerHTML = value.toFixed(2);
+	    	input.parentNode.parentNode.getElementsByClassName('myprice')[0].innerHTML = value.toFixed(2);
 	    	setCount(thisTable.getElementsByClassName('myprice'));
 	  	});
 	  	setCount(thisTable.getElementsByClassName('myprice'));
@@ -248,6 +249,10 @@ $(function() {
 			}
 			localStorage['product'] = JSON.stringify(items);
 		});
+		
+		$('.order_form_delete').on('click', function () {
+			$(this).parent().hide();
+		})
 		
 
 
