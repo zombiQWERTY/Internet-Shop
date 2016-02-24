@@ -33,9 +33,7 @@ $(function() {
   var $galleryItem = $('.goods__gallery_wrapper-item');
   var img;
   $galleryItem.on('click', function() {
-    img = $(this)
-      .addClass('active')
-      .html();
+    img = $(this).addClass('active').html();
 
     $galleryItem.removeClass('active');
     $gallery.html(img);

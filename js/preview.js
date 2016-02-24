@@ -21,12 +21,12 @@ function SaveDataToLocalStorage(data, table) {
   localStorage[table] = JSON.stringify(a);
 }
 
-$(function() {
+$(function () {
   if (window.location.pathname.indexOf('pdp') + 1) {
     $.ajax({
       dataType: 'json',
       url: './json/clothes.json',
-      success: function(data) {
+      success: function (data) {
 
         var goods_key = Object.keys(data);
         console.log('Connect');
@@ -34,8 +34,8 @@ $(function() {
         var myId = my_hash.substr(my_hash.indexOf('#') + 1);
         var object = {};
 
-        $.each(data, function(key, myArray) {
-          myArray.filter(function(myObj) {
+        $.each(data, function (key, myArray) {
+          myArray.filter(function (myObj) {
             if (myObj.id == myId) {
               object = myObj;
 
@@ -87,7 +87,7 @@ $(function() {
                 divGoodsSizeChoose.className = 'goods__wrapper__size';
                 divGoodsWrapperContent.appendChild(divGoodsSizeChoose);
 
-                for (var j = 0; i <= myObj.size.length - 1; j++) {
+                for (var j = 0; j <= myObj.size.length - 1; j++) {
                   var divSize = document.createElement('div');
                   divSize.className = 'size';
 
@@ -96,7 +96,6 @@ $(function() {
                 }
                 var aAddToCart = document.createElement('a');
                 aAddToCart.className = 'addToCart disabled';
-                //aAddToCart.id = 'addToCart';
                 aAddToCart.innerHTML = 'Add to Cart';
                 divGoodsWrapperContent.appendChild(aAddToCart);
 
@@ -108,7 +107,7 @@ $(function() {
 
         object.needfullSize = [];
         var $addToCart = $('.addToCart');
-        var disableBtn = function() {
+        var disableBtn = function () {
           if ($('.size').hasClass('green')) {
             $addToCart.removeClass('disabled');
             $addToCart.attr('href', './shop-cart.html');
@@ -121,7 +120,7 @@ $(function() {
             object.needfullSize = [];
           }
         };
-        var setAddCartActive = function($this, html) {
+        var setAddCartActive = function ($this, html) {
           if ($this.hasClass('green')) {
             var neededSize = false;
             for (var i = 0; i <= object.needfullSize.length - 1; i++) {
@@ -133,9 +132,9 @@ $(function() {
               object.needfullSize.push(html);
             }
           } else {
-            for (var i = 0; i <= object.needfullSize.length - 1; i++) {
-              if (object.needfullSize[i].indexOf(html) + 1) {
-                object.needfullSize[i] = null;
+            for (var k = 0; k <= object.needfullSize.length - 1; k++) {
+              if (object.needfullSize[k].indexOf(html) + 1) {
+                object.needfullSize[k] = null;
               }
             }
           }
@@ -143,7 +142,7 @@ $(function() {
         };
 
         var clicked = true;
-        $('.goods__wrapper__size').on('click', '.size', function() {
+        $('.goods__wrapper__size').on('click', '.size', function () {
           var $this;
           $this = $(this);
           if ($this.hasClass('green')) {
@@ -159,11 +158,11 @@ $(function() {
           }
         });
 
-        $addToCart.on('click', function() {
+        $addToCart.on('click', function () {
           SaveDataToLocalStorage(object, 'product');
         });
       },
-      error: function() {
+      error: function () {
         console.log('Connect error');
       }
     });
