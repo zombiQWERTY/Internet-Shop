@@ -529,3 +529,15 @@ h3{
   color: #949494;
   text-transform: uppercase;
 }
+
+.toggle-menu {
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-tablet {
+  display: none;
+}

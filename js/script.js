@@ -75,4 +75,8 @@ $(function() {
     slidesToShow: 5,
     variableWidth: true
   });
+
+  $('.toggle-menu').on('click', function() {
+    $('.menu-tablet').toggle();
+  });
 });
