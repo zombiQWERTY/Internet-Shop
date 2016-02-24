@@ -1,323 +1,320 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Internet__Shop</title>
-		<!-- viewport meta tag to control layout on mobile browsers -->
-		<meta name="viewport" content="width=device-width, user-scalable=no" />
-		<!-- режим cовместимости документов для веб-страниц -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-		<!--  под IE Mobile  у форма не растягивалась под размер экрана   -->
-		<meta name="HandheldFriendly" content="true" />
-		<!-- Браузер для BlackBerry, Android и Safari для IOS (iPhone / IPod / IPad) автоматически обнаруживает телефонные номера и адреса электронной почты на веб страницах, не преобразует их в ссылки -->
-		<meta name="format-detection" content="telephone=no" />
-		<meta name="format-detection" content="address=no" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		 <link rel="stylesheet" href="./css/category-all.css" />
-		<link rel="stylesheet" href="./css/media_1024.css" />
-		<link rel="stylesheet" href="./css/media_768.css" />
-		<link rel="stylesheet" href="./css/media_414.css" />
-		<!-- подключение карусели -->
-		<link rel="stylesheet" href="./css/carousel.css" />
-		<link rel="stylesheet" href="./slick/slick.css" />
-		<link rel="stylesheet" href="./slick/slick-theme.css" />
-		<!-- позволяет указать базовый URL, относительно которого будут устанавливаться другие адреса -->
-		 <base href="./" />
-	</head>
-<body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header__service">
-				<div class="header__logo">
-					<a href="index.html">
-						<img src="./img/logo.png" alt="" />
-					</a>
-				</div>
-				<menu class="header__menu">
-					<ul>
-						<li><a href="#">Woman</a></li>
-						<li><a href="category-all.html">Men</a></li>
-						<li><a href="#">Kids</a></li>
-						<li><a href="#">Coming Soon</a></li>
-						<li><a href="#">About</a></li>
-					</ul>
-				</menu>
-			</div>
-			<div class="header__service">
-				<div class="search search_desktop">
-					<form action="" method="">
-						<div class="search__form">
-							<input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
-							<input type="submit" value="" class="search__form__button search__form__button_submit" />
-						</div>
-						<div class="search__form__button search__form__button_toggle"></div>
-					</form>
-				</div>
-				<div class="header__basket">
-					<a href="./shop-cart.html" class="icon icon_basket">Basket (<span id="cart-counter">0</span>)</a>
-				</div>
-			</div>
-		</header>
-		<div class="search search_mobile">
-			<form action="" method="">
-				<div class="search__form">
-					<input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
-					<input type="submit" value="" class="search__form__button search__form__button_submit" />
-				</div>
-			</form>
-		</div>
-		<div class="menu-tablet">
-			<menu>
-				<ul class="menu-tablet__items">
-					<li><a href="#">Woman</a></li>
-					<li><a href="category-all.html">Men</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">Coming Soon</a></li>
-					<li><a href="#">About</a></li>
-				</ul>
-				</menu>
-		</div>
-		<main class="main">
-			<div class="page-content page_home">
-				<div class="promo promo_large">
-					<h1>Hazy Shade of spring</h1>
-					<p class="subheader large_letter">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</p>
-					<a href="#" class="button promo_large__button">Check new arrivals</a>
-				</div>
-				<div class="items-grid">
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/1.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/2.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/3.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/4.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/5.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/6.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/7.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="items-grid__item">
-						<a href="#">
-							<div class="items-grid__item__image">
-								<img src="img/gallery/8.jpg" alt="" />
-							</div>
-							<div class="items-grid__item__text">
-								<div class="items-grid__item__text-wrapper">
-									<div class="items-grid__item__text__title">
-										Elegant shoes
-									</div>
-									<div class="items-grid__item__text__post-title">
-										BRAIDED LEATHER
-									</div>
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="register-block promo promo_small">
-						<h2 class="register-block__title">
-							Sign up to receive our updates
-						</h2>
-						<p class="subheader">
-							Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
-						</p>
-						<div class="register-block__form">
-							<form action="" method="">
-								<div class="register-block__form-wrapper">
-									<input type="email" class="register-block__form__field" placeholder="Your e-mail" />
-									<input type="submit" value="add" class="register-block__form__submit" />
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="carousel">
-					<div><img src="img/carousel/1.jpg" alt="1" /></div>
-					<div><img src="img/carousel/2.jpg" alt="" /></div>
-					<div><img src="img/carousel/3.jpg" alt="" /></div>
-					<div><img src="img/carousel/4.jpg" alt="" /></div>
-					<div><img src="img/carousel/5.jpg" alt="" /></div>
-					<div><img src="img/carousel/6.jpg" alt="" /></div>
-					<div><img src="img/carousel/7.jpg" alt="" /></div>
-					<div><img src="img/carousel/8.jpg" alt="" /></div>
-				</div>
-
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="footer__section">
-				<div class="footer__section__title">
-					<h3>Collection</h3>
-				</div>
-				<div class="footer__section__links">
-					<ul>
-						<li><a href="#">Woman (1725)</a></li>
-						<li><a href="category-all.html">Men (635)</a></li>
-						<li><a href="#">Kids (2514)</a></li>
-						<li><a href="#">Coming Soon (76)</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer__section">
-				<div class="footer__section__title">
-					<h3>Site</h3>
-				</div>
-				<div class="footer__section__links">
-					<ul>
-						<li><a href="#">Terms of Service</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-						<li><a href="#">Copyright Policy</a></li>
-						<li><a href="#">Press Kit</a></li>
-						<li><a href="#">Support</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer__section">
-				<div class="footer__section__title">
-					<h3>Shop</h3>
-				</div>
-				<div class="footer__section__links">
-					<ul>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Shipping methods</a></li>
-						<li><a href="#">Career</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-	        <div class="footer__section">
-				<div class="footer__section__title">
-					<h3>Social</h3>
-				</div>
-				<div class="footer__section__links">
-					<ul>
-						<li>Shoper is made with love in Warsaw.</li>
-						<li>2014 &copy; All rights reserved. El Passion</li>
-						<li class="footer__section__links__social">
-						<a href="https://twitter.com/?lang=ru" class="link link_tw"></a>
-						<a href="https://www.facebook.com/" class="link link_fb"></a>
-						<a href="https://www.instagram.com/" class="link link_inst"></a>
-						</li>
-					</ul>
-				</div>
-	        </div>
-		</footer>
-	</div>
-	<script src="./js/common/jquery.js"></script>
-	<script src="./js/script.js"></script>
-	<script src="./js/adding_items.js"></script>
-	<script src="./js/preview.js"></script>
-	<script src="./js/shop-cart.js"></script>
-	<!-- подключение карусели -->
-	<script src="./slick/slick.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Internet Shop</title>
+    <!-- viewport meta tag to control layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- режим cовместимости документов для веб-страниц -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <!--  под IE Mobile  у форма не растягивалась под размер экрана   -->
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Браузер для BlackBerry, Android и Safari для IOS (iPhone / IPod / IPad) автоматически обнаруживает телефонные номера и адреса электронной почты на веб страницах, не преобразует их в ссылки -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/category-all.css" />
+    <link rel="stylesheet" href="./css/media_1024.css" />
+    <link rel="stylesheet" href="./css/media_768.css" />
+    <link rel="stylesheet" href="./css/media_414.css" />
+    <!-- подключение карусели -->
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <!-- позволяет указать базовый URL, относительно которого будут устанавливаться другие адреса -->
+    <base href="./" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__service">
+          <div class="header__logo">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" />
+            </a>
+          </div>
+          <menu class="header__menu">
+            <ul>
+              <li><a href="#">Woman</a></li>
+              <li><a href="category-all.html">Men</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </menu>
+        </div>
+        <div class="header__service">
+          <div class="search search_desktop">
+            <form action="" method="">
+              <div class="search__form">
+                <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
+                <input type="submit" value="" class="search__form__button search__form__button_submit" />
+              </div>
+              <div class="search__form__button search__form__button_toggle"></div>
+            </form>
+          </div>
+          <div class="header__basket">
+            <a href="./shop-cart.html" class="icon icon_basket">Basket (<span id="cart-counter">0</span>)</a>
+          </div>
+        </div>
+      </header>
+      <div class="search search_mobile">
+        <form action="" method="">
+          <div class="search__form">
+            <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
+            <input type="submit" value="" class="search__form__button search__form__button_submit" />
+          </div>
+        </form>
+      </div>
+      <div class="menu-tablet">
+        <menu>
+          <ul class="menu-tablet__items">
+            <li><a href="#">Woman</a></li>
+            <li><a href="category-all.html">Men</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          </menu>
+      </div>
+      <main class="main">
+        <div class="page-content page_home">
+          <div class="promo promo_large">
+            <h1>Hazy Shade of spring</h1>
+            <p class="subheader large_letter">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo.</p>
+            <a href="#" class="button promo_large__button">Check new arrivals</a>
+          </div>
+          <div class="items-grid">
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/1.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/2.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/3.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/4.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/5.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/6.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/7.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="items-grid__item">
+              <a href="#">
+                <div class="items-grid__item__image">
+                  <img src="img/gallery/8.jpg" alt="" />
+                </div>
+                <div class="items-grid__item__text">
+                  <div class="items-grid__item__text-wrapper">
+                    <div class="items-grid__item__text__title">
+                      Elegant shoes
+                    </div>
+                    <div class="items-grid__item__text__post-title">
+                      BRAIDED LEATHER
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="register-block promo promo_small">
+              <h2 class="register-block__title">
+                Sign up to receive our updates
+              </h2>
+              <p class="subheader">
+                Nulla ipsum dolor lacus, suscipit adipiscing. Cum sociis natoque penatibus et ultrices volutpat.
+              </p>
+              <div class="register-block__form">
+                <form action="" method="">
+                  <div class="register-block__form-wrapper">
+                    <input type="email" class="register-block__form__field" placeholder="Your e-mail" />
+                    <input type="submit" value="add" class="register-block__form__submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="carousel">
+            <div><img src="img/carousel/1.jpg" alt="1" /></div>
+            <div><img src="img/carousel/2.jpg" alt="" /></div>
+            <div><img src="img/carousel/3.jpg" alt="" /></div>
+            <div><img src="img/carousel/4.jpg" alt="" /></div>
+            <div><img src="img/carousel/5.jpg" alt="" /></div>
+            <div><img src="img/carousel/6.jpg" alt="" /></div>
+            <div><img src="img/carousel/7.jpg" alt="" /></div>
+            <div><img src="img/carousel/8.jpg" alt="" /></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Collection</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">Woman (1725)</a></li>
+              <li><a href="category-all.html">Men (635)</a></li>
+              <li><a href="#">Kids (2514)</a></li>
+              <li><a href="#">Coming Soon (76)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Site</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Copyright Policy</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Shop</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Shipping methods</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Social</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li>Shoper is made with love in Warsaw.</li>
+              <li>2014 &copy; All rights reserved. El Passion</li>
+              <li class="footer__section__links__social">
+              <a href="#" class="link link_tw"></a>
+              <a href="#" class="link link_fb"></a>
+              <a href="#" class="link link_inst"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/common/jquery.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/adding_items.js"></script>
+    <script src="./js/preview.js"></script>
+    <script src="./js/shop-cart.js"></script>
+  </body>
 </html>

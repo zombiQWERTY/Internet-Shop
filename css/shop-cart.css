@@ -1,28 +1,31 @@
 table {
-    width: 100%; /* Ширина таблицы */
-   	margin-top: 60px;
-   	border: none;
-   	text-align: left;
-   	color: #000;
-   }
+  width: 100%; /* Ширина таблицы */
+  margin-top: 60px;
+  border: none;
+  text-align: left;
+  color: #000;
+}
 
 thead{
-	border: none;
-	text-transform: uppercase;
-	color: #b9b5b5;
+  border: none;
+  text-transform: uppercase;
+  color: #b9b5b5;
 }
+
 td, th{
-	width: 10%;
-	border: none;
+  width: 10%;
+  border: none;
 }
+
 td{
-	border-top: 1px solid #b9b5b5;
-	border-bottom: 1px solid #b9b5b5;
-	vertical-align: middle;
+  border-top: 1px solid #b9b5b5;
+  border-bottom: 1px solid #b9b5b5;
+  vertical-align: middle;
 }
+
 .large_td{
-	width: 40%;
-	margin: 10px 0;
+  width: 40%;
+  margin: 10px 0;
 }
 
 .small_letter, .subheader{
@@ -33,60 +36,67 @@ td{
 }
 
 .product_item_basket{
-/*	width: 100px;*/
-/*	height: 100px;*/
-	overflow: hidden;
-	margin: 10px;
+  overflow: hidden;
+  margin: 10px;
 }
 
 .product_item_basket img{
-	width: 100%;
+  width: 100%;
 }
+
 .sub_descr{
-	color: #606060;
+  color: #606060;
   font: 14px/1.45 "Lato";
   text-align: left;
   margin: 0;
 }
+
 .header_descr_table{
-	color: #000;
+  color: #000;
 }
+
 .delete{
-	width: 20px;
-	text-align: center;
+  width: 20px;
+  text-align: center;
 }
+
 .center{
-	text-align: center;
+  text-align: center;
 }
+
 input[type="number"] {
   border: none;
   text-align: right;
   width: 30px;
 }
-input[type=number]::-webkit-inner-spin-button, 
+
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
    opacity: 1;
 }
+
 tfoot{
-	width: 100%;
+  width: 100%;
 }
+
 tfoot{
-	background-color: #f9f9f9;
-	
+  background-color: #f9f9f9;
 }
 
 .right_side{
-	text-align: right;
-	font-weight: bold;
-	padding: 15px 0;
+  text-align: right;
+  font-weight: bold;
+  padding: 15px 0;
 }
+
 .left_side{
-	text-align: center;
-	color: #f68236;
-	padding: 15px 0;
+  text-align: center;
+  color: #f68236;
+  padding: 15px 0;
 }
+
 .big_button{
-	margin-left: 20px;
+  margin-left: 20px;
   display: inline-block;
   width: 190px;
   height: 50px;
@@ -94,108 +104,111 @@ tfoot{
   text-transform: uppercase;
   background-color: #f68236;
   padding: 10px 0;
-
-/*  margin-top: 50px;
-  margin-bottom: 100px;*/
   text-align: center;
 }
+
 .big_button:hover{
-	text-decoration: none;
+  text-decoration: none;
 }
+
 .order{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin-top: 50px;
-	padding-bottom: 50px;
-	margin-bottom: 30px;
-	border-bottom: 1px solid #e5e5e5;
-	
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
+
 .order a{
-	padding: 10px 0;
+  padding: 10px 0;
 }
 
 .visible_small_screen .delete_table{
-	margin-top: 0;
-	width: 20px;
-	
+  margin-top: 0;
+  width: 20px;
 }
 
 .visible_small_screen .table_amount{
-	text-align: center;
-	margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 0;
   padding-top: 60px;
 }
 
 .visible_small_screen {
-	display: none;
+  display: none;
 }
-	
+
 .visible_big_screen{
-	display: block;
+  display: block;
 }
+
 .empty_bag{
-	margin: 50px 0;
-	display: none;
+  margin: 50px 0;
+  display: none;
 }
+
 .center{
-	text-align: center;
+  text-align: center;
 }
+
 .order_form{
 
-	display: none;
+  display: none;
 }
+
 .form_wrapper{
-	padding-left: 20px;
-	padding-bottom: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
+
 .show_form{
-	display: block;
-	width: 350px;
-	border: 1px solid black;
-	position: absolute;
-	top: 0;
-	left: 35%;
-	background: white;
+  display: block;
+  width: 350px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  background: white;
 }
 
 
 #delete-section {
-    position: absolute;
-    width: 98%;
-    height: 98%;
-    display:none;
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  display:none;
 }
+
 #delete-section-background {
-    width:100%;
-    height:100%;
-    background: gray;
-    z-index:5;
-    opacity: 0.6;
-    position:absolute;
-
+  width:100%;
+  height:100%;
+  background: gray;
+  z-index:5;
+  opacity: 0.6;
+  position:absolute;
 }
-#delete-message {
-    position:absolute;
-    margin-left:35%;
-    z-index:100;
-    top:10%;
 
-    background: white;
-    width:30%;
-    padding:20px;
-    border:1px solid black;
+#delete-message {
+  position:absolute;
+  margin-left:35%;
+  z-index:100;
+  top:10%;
+  background: white;
+  width:30%;
+  padding:20px;
+  border:1px solid black;
 }
 
 .order_form_delete{
-	  display: inline-block;
-    float: right;
-    padding-right: 7px;
-    font-weight: bold;
-    color: red;
+  display: inline-block;
+  float: right;
+  padding-right: 7px;
+  font-weight: bold;
+  color: red;
 }

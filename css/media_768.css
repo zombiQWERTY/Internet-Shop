@@ -1,118 +1,126 @@
 @media screen and (max-width: 768px){
 
-	.header__menu{
-		display: none;
-	}
-	.menu-tablet{
-		display: block;
-	  text-align: center;
-	  border-bottom: 1px solid #e5e5e5;
-	}
-	.menu-tablet__items{
-	  list-style-type: none;
-	}
-	.menu-tablet__items li{
-	  padding: 15px 0;
-	  text-align: center;
-	}
-	.menu-tablet__items li a {
-	  color: #303030;
+  .header__menu{
+    display: none;
+  }
 
-	}
+  .menu-tablet{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+  }
 
-	.button{
-		display: none;
-	}
+  .menu-tablet__items{
+    list-style-type: none;
+  }
 
-	.items-grid__item{
-		margin: 0 auto;
-		width: 70%;
-		overflow: hidden;
-	}
-	.items-grid__item img{
-		width: 100%;
-	}
-	.footer__section:not(:last-child){
-		display: none;
-	}
-	.footer__section:last-child{
-		border: none;
-	}
-	.footer__section{
-		text-align: center;
-		font-family: "Myriad Pro";
-		font-size: 18px;
-	}
-	.subheader {
-	  font: italic 18px/1.45 "Georgia";
-	}
-	h3{
-		font-size: 30px;
-	}
-	.large_letter{
-		font-size: 24px;
-	}
-	
-	.header{
-		  padding: 15px 0;
-	}
+  .menu-tablet__items li{
+    padding: 15px 0;
+    text-align: center;
+  }
 
-	.promo_large, .promo{
-		margin: 0;
-		padding: 30px 0;
-	}
+  .menu-tablet__items li a {
+    color: #303030;
+  }
 
-	/*men-clother*/
-	.men-clother-description h3{
-		font: bold 14px/1 "Lato";
-	}
+  .button{
+    display: none;
+  }
 
-	.breadcrumb{
+  .items-grid__item{
+    margin: 0 auto;
+    width: 70%;
+    overflow: hidden;
+  }
+
+  .items-grid__item img{
+    width: 100%;
+  }
+
+  .footer__section:not(:last-child){
+    display: none;
+  }
+
+  .footer__section:last-child{
+    border: none;
+  }
+
+  .footer__section{
+    text-align: center;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 18px;
+  }
+
+  .subheader {
+    font: italic 18px/1.45 "Georgia";
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .large_letter{
+    font-size: 24px;
+  }
+
+  .header{
+      padding: 15px 0;
+  }
+
+  .promo_large, .promo{
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  /*men-clother*/
+  .men-clother-description h3{
+    font: bold 14px/1 "Lato";
+  }
+
+  .breadcrumb{
     justify-content: center;
-	}
+  }
 
-.breadcrumb li{
-	text-align: center;
-}
+  .breadcrumb li{
+    text-align: center;
+  }
 
-	/*thank you*/
-	.sent_wrapper{
-	margin: 50px 0;
+  /*thank you*/
+  .sent_wrapper{
+    margin: 50px 0;
+  }
 
-	}
-	.footer__section:last-child{
-/*		border-top: 1px solid rgba(0, 0, 0, .1);*/
-	}
-	.footer__section__title{
-		margin-top: 30px;
-	}
+  .footer__section__title{
+    margin-top: 30px;
+  }
 
-	.nothing{
-		display: none;
-	}
-	
-	.big_button{
-		margin: 0 auto;
-	}
-	.order{
-		flex-direction: column-reverse;
-		justify-content: center;
-		margin-top: 50px;
-		padding-bottom: 50px;
-		margin-bottom: 30px;
-		border-bottom: 1px solid #e5e5e5;
-		text-align: center;
-	}
-	.header_descr_table{
-		font-size: 14px;
-	}
-	.visible_small_screen {
-		display: block;
-	}
-	
-	.visible_big_screen{
-		display: none;
-	}
+  .nothing{
+    display: none;
+  }
 
+  .big_button{
+    margin: 0 auto;
+  }
 
+  .order{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+  }
+
+  .header_descr_table{
+    font-size: 14px;
+  }
+
+  .visible_small_screen {
+    display: block;
+  }
+
+  .visible_big_screen{
+    display: none;
+  }
 }

@@ -1,17 +1,12 @@
 @media screen and (max-width: 1024px){
-	
-	.header__menu li {
+  .header__menu li {
     padding: 0 15px;
-	}
-
+  }
 }
 
 @media screen and (max-width: 768px){
-	
-	/*men-clother*/
-	.men-clother-description{
-		width: 45%;
-	}
-	
-
+  /*men-clother*/
+  .men-clother-description{
+    width: 45%;
+  }
 }

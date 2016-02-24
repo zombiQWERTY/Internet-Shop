@@ -1,232 +1,211 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-	<title>Internet__Shop</title>
-	<!-- viewport meta tag to control layout on mobile browsers -->
-	<meta name="viewport" content="width=device-width, user-scalable=no" />
-	<!-- режим cовместимости документов для веб-страниц -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<!--  под IE Mobile  у форма не растягивалась под размер экрана   -->
-	<meta name="HandheldFriendly" content="true" />
-	<!-- Браузер для BlackBerry, Android и Safari для IOS (iPhone / IPod / IPad) автоматически обнаруживает телефонные номера и адреса электронной почты на веб страницах, не преобразует их в ссылки -->
-	<meta name="format-detection" content="telephone=no" />
-	<meta name="format-detection" content="address=no" />
-	<link rel="stylesheet" href="./css/reset.css" />
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/category-all.css" />
-	<link rel="stylesheet" href="./css/pdp.css" />
-	<link rel="stylesheet" href="./css/shop-cart.css" />
-	<link rel="stylesheet" href="./css/media_1024.css" />
-	<link rel="stylesheet" href="./css/media_768.css" />
-	<link rel="stylesheet" href="./css/media_414.css" />
-	<!-- подключение карусели -->
-	<link rel="stylesheet" href="./css/carousel.css" />
-	<link rel="stylesheet" href="./slick/slick.css" />
-	<link rel="stylesheet" href="./slick/slick-theme.css" />
-	<!-- позволяет указать базовый URL, относительно которого будут устанавливаться другие адреса -->
-	 <base href="./" />
-</head>
-<body>
-  <div class="wrapper">
-	<header class="header">
-	  <div class="header__service">
-		<div class="header__logo">
-		  <a href="index.html">
-			<img src="./img/logo.png" alt="" />
-		  </a>
-		</div>
-		<menu class="header__menu">
-		  <ul>
-			<li><a href="#">Woman</a></li>
-			<li><a href="category-all.html">Men</a></li>
-			<li><a href="#">Kids</a></li>
-			<li><a href="#">Coming Soon</a></li>
-			<li><a href="#">About</a></li>
-		  </ul>
-		</menu>
-	  </div>
-	  <div class="header__service">
-		<div class="search search_desktop">
-		  <form action="" method="">
-			<div class="search__form">
-			  <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
-			  <input type="submit" value="" class="search__form__button search__form__button_submit" />
-			</div>
-			<div class="search__form__button search__form__button_toggle"></div>
-		  </form>
-		</div>
-		<div class="header__basket">
-		  <a href="./shop-cart.html" class="icon icon_basket">Basket (<span id="cart-counter">0</span>)</a>
-		</div>
-	  </div>
-	</header>
-	<div class="search search_mobile">
-	  <form action="" method="">
-		<div class="search__form">
-		  <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
-		  <input type="submit" value="" class="search__form__button search__form__button_submit" />
-		</div>
-	  </form>
-	</div>
-	<div class="menu-tablet">
-	  <menu>
-		<ul class="menu-tablet__items">
-		  <li><a href="#">Woman</a></li>
-		  <li><a href="category-all.html">Men</a></li>
-		  <li><a href="#">Kids</a></li>
-		  <li><a href="#">Coming Soon</a></li>
-		  <li><a href="#">About</a></li>
-		</ul>
-		</menu>
-	</div>
-	<div class="wrapper_breadcrumb">
-	  <ul class="breadcrumb">
-		<li><a href="index.html">Home</a></li>
-		<li><a href="category-all.html">Men</a></li>
-		<li>Basket</li>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Internet Shop</title>
+    <!-- viewport meta tag to control layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <!-- режим cовместимости документов для веб-страниц -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <!--  под IE Mobile  у форма не растягивалась под размер экрана   -->
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Браузер для BlackBerry, Android и Safari для IOS (iPhone / IPod / IPad) автоматически обнаруживает телефонные номера и адреса электронной почты на веб страницах, не преобразует их в ссылки -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/category-all.css" />
+    <link rel="stylesheet" href="./css/pdp.css" />
+    <link rel="stylesheet" href="./css/shop-cart.css" />
+    <link rel="stylesheet" href="./css/media_1024.css" />
+    <link rel="stylesheet" href="./css/media_768.css" />
+    <link rel="stylesheet" href="./css/media_414.css" />
+    <!-- подключение карусели -->
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <!-- позволяет указать базовый URL, относительно которого будут устанавливаться другие адреса -->
+    <base href="./" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__service">
+        <div class="header__logo">
+          <a href="index.html">
+          <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <menu class="header__menu">
+          <ul>
+          <li><a href="#">Woman</a></li>
+          <li><a href="category-all.html">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">About</a></li>
+          </ul>
+        </menu>
+        </div>
+        <div class="header__service">
+        <div class="search search_desktop">
+          <form action="" method="">
+          <div class="search__form">
+            <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
+            <input type="submit" value="" class="search__form__button search__form__button_submit" />
+          </div>
+          <div class="search__form__button search__form__button_toggle"></div>
+          </form>
+        </div>
+        <div class="header__basket">
+          <a href="./shop-cart.html" class="icon icon_basket">Basket (<span id="cart-counter">0</span>)</a>
+        </div>
+        </div>
+      </header>
+      <div class="search search_mobile">
+        <form action="" method="">
+        <div class="search__form">
+          <input type="text" class="search__form__field" name="" value="" placeholder="Search something..." />
+          <input type="submit" value="" class="search__form__button search__form__button_submit" />
+        </div>
+        </form>
+      </div>
+      <div class="menu-tablet">
+        <menu>
+        <ul class="menu-tablet__items">
+          <li><a href="#">Woman</a></li>
+          <li><a href="category-all.html">Men</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        </menu>
+      </div>
+      <div class="wrapper_breadcrumb">
+        <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category-all.html">Men</a></li>
+        <li>Basket</li>
 
-	  </ul>
-	</div>
-  <main>
-	<h2>Your shopping Bag</h2>
-	<p class="subheader small_letter">Items reserved by limited time only</p>
-	<h2 class="empty_bag">Your shopping Bag is empty</h2>
-	<div class="table_wrapper">
-		<table class="visible_big_screen">
-		  <thead>
-				<th>Product</th>
-				<th class="large_td">Description</th>
-				<th class="center">color</th>
-				<th class="center">Size</th>
-				<th class="center">Qty</th>
-				<th class="center">Amount</th>
-				<th class="center">Delete</th>
-			</thead>
-
-			 <tfoot>
-		    <tr>
-			    <th class="right_side" colspan="5">Subtotal</th>
-				<!-- <th>Description</th> -->
-				<!-- <th>color</th>
-				<th>size</th>
-				<th>qty</th>
-				<th>amount</th> -->
-				<th class="left_side">Sub</th>
-				<th></th>
-		    </tr>
-		  </tfoot>
-		  
-		</table>
-
-		<table class="visible_small_screen">
-		  <thead>
-			<th>Product</th>
-			<th class="large_td">Description</th>
-			<th class="delete">delete</th>
-		</thead>
-
-		<tfoot>
-		    <tr>
-			    <th class="right_side" colspan="2">Subtotal</th>
-				<!-- <th>Description</th> -->
-				<!-- <th>color</th>
-				<th>size</th>
-				<th>qty</th>
-				<th>amount</th> -->
-				<th class="left_side">Sub</th>
-		    </tr>
-		  </tfoot>
-		</table>
-		
-	</div>
-	<div class="order">
-		<a href="category-all.html">Continue shopping</a>
-		<a class="big_button" id="order">Order now</a>
-	</div>
-
-	<div class="order_form">
-	<div class="order_form_delete">X</div>
-    <h2>Ordering</h2>
-    <hr>
-    <form class="form_wrapper" method="" id="order-form" onsubmit="event.preventDefault();">
-        <!--action="/internet-shop/main-page.html"-->
-        <label for="Surname">Surname</label><br> <input type="text" placeholder="Surname" id="Surname" pattern="[A-Za-zА-Яа-яЁё]{2,}" required/><br>
-        <label for="Name">Name</label><br> <input type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Name"  id="Name" required><br>
-        <label for="Phone">Phone</label> <br><input type="tel" placeholder="10 numbers"  pattern="[0-9]{10,}" id="Phone" required><br>
-        <label for="mail">E-mail</label> <br><input type="email" placeholder="E-mail" id="mail" required><br>
-        <input id="submit" type="submit"/>
-    </form>
-	</div>
-
-  </main>
-  <footer class="footer">
-	  <div class="footer__section">
-		<div class="footer__section__title">
-		  <h3>Collection</h3>
-		</div>
-		<div class="footer__section__links">
-		  <ul>
-			<li><a href="#">Woman (1725)</a></li>
-			<li><a href="category-all.html">Men (635)</a></li>
-			<li><a href="#">Kids (2514)</a></li>
-			<li><a href="#">Coming Soon (76)</a></li>
-		  </ul>
-		</div>
-	  </div>
-	  <div class="footer__section">
-		<div class="footer__section__title">
-		  <h3>Site</h3>
-		</div>
-		<div class="footer__section__links">
-		  <ul>
-			<li><a href="#">Terms of Service</a></li>
-			<li><a href="#">Privacy Policy</a></li>
-			<li><a href="#">Copyright Policy</a></li>
-			<li><a href="#">Press Kit</a></li>
-			<li><a href="#">Support</a></li>
-		  </ul>
-		</div>
-	  </div>
-	  <div class="footer__section">
-		<div class="footer__section__title">
-		  <h3>Shop</h3>
-		</div>
-		<div class="footer__section__links">
-		  <ul>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Shipping methods</a></li>
-			<li><a href="#">Career</a></li>
-			<li><a href="#">Contact</a></li>
-		  </ul>
-		</div>
-	  </div>
-	  <div class="footer__section">
-		<div class="footer__section__title">
-		  <h3>Social</h3>
-		</div>
-		<div class="footer__section__links">
-		  <ul>
-			<li>Shoper is made with love in Warsaw.</li>
-			<li>2014 &copy; All rights reserved. El Passion</li>
-			<li class="footer__section__links__social">
-			<a href="https://twitter.com/?lang=ru" class="link link_tw"></a>
-			<a href="https://www.facebook.com/" class="link link_fb"></a>
-			<a href="https://www.instagram.com/" class="link link_inst"></a>
-			</li>
-		  </ul>
-		</div>
-	  </div>
-	</footer>
-
-	</div>
-
-  
-	<script src="./js/common/jquery.js"></script>
-	<script src="./js/script.js"></script>
-	<script src="./js/preview.js"></script>
-	<script src="./js/shop-cart.js"></script>
-	<!-- подключение карусели -->
-	<script src="./slick/slick.js"></script>
-</body>
+        </ul>
+      </div>
+      <main>
+        <h2>Your shopping Bag</h2>
+        <p class="subheader small_letter">Items reserved by limited time only</p>
+        <h2 class="empty_bag">Your shopping Bag is empty</h2>
+        <div class="table_wrapper">
+          <table class="visible_big_screen">
+            <thead>
+              <th>Product</th>
+              <th class="large_td">Description</th>
+              <th class="center">color</th>
+              <th class="center">Size</th>
+              <th class="center">Qty</th>
+              <th class="center">Amount</th>
+              <th class="center">Delete</th>
+            </thead>
+             <tfoot>
+              <tr>
+                <th class="right_side" colspan="5">Subtotal</th>
+                <th class="left_side">Sub</th>
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="visible_small_screen">
+            <thead>
+            <th>Product</th>
+            <th class="large_td">Description</th>
+            <th class="delete">delete</th>
+          </thead>
+          <tfoot>
+              <tr>
+                <th class="right_side" colspan="2">Subtotal</th>
+                <th class="left_side">Sub</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="order">
+          <a href="category-all.html">Continue shopping</a>
+          <a class="big_button" id="order">Order now</a>
+        </div>
+        <div class="order_form">
+        <div class="order_form_delete">X</div>
+          <h2>Ordering</h2>
+          <hr>
+          <form class="form_wrapper" method="" id="order-form" onsubmit="event.preventDefault();">
+              <label for="Surname">Surname</label><br> <input type="text" placeholder="Surname" id="Surname" pattern="[A-Za-zА-Яа-яЁё]{2,}" required/><br>
+              <label for="Name">Name</label><br> <input type="text" pattern="[A-Za-zА-Яа-яЁё]{2,}" placeholder="Name"  id="Name" required><br>
+              <label for="Phone">Phone</label> <br><input type="tel" placeholder="10 numbers"  pattern="[0-9]{10,}" id="Phone" required><br>
+              <label for="mail">E-mail</label> <br><input type="email" placeholder="E-mail" id="mail" required><br>
+              <input id="submit" type="submit"/>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Collection</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">Woman (1725)</a></li>
+              <li><a href="category-all.html">Men (635)</a></li>
+              <li><a href="#">Kids (2514)</a></li>
+              <li><a href="#">Coming Soon (76)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Site</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Copyright Policy</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Shop</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Shipping methods</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__section">
+          <div class="footer__section__title">
+            <h3>Social</h3>
+          </div>
+          <div class="footer__section__links">
+            <ul>
+              <li>Shoper is made with love in Warsaw.</li>
+              <li>2014 &copy; All rights reserved. El Passion</li>
+              <li class="footer__section__links__social">
+                <a href="#" class="link link_tw"></a>
+                <a href="#" class="link link_fb"></a>
+                <a href="#" class="link link_inst"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/common/jquery.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/adding_items.js"></script>
+    <script src="./js/preview.js"></script>
+    <script src="./js/shop-cart.js"></script>
+  </body>
 </html>
